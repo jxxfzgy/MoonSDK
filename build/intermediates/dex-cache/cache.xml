@@ -12,7 +12,19 @@
         jar="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="b1ccb937d7bcc4acc6e07223ff682cdaea9ff209"/>
+        sha1="0b160857afb16ecd4c2463be58e9e4acf4f06172"/>
+    <item
+        dex="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-49e57448c087bba84e5673d953290ca91ff1dbbf.jar"
+        jar="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-4b6b171d9a6c65a94fe400a6afd30fb82f0d1d8a.jar"
+        jar="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\LoopViewPager\unspecified\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1326e27b8db4f4c2c646b72aaa55138cd296dc21"/>
     <item
         dex="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\pre-dexed\debug\AMap_2DMap_V2.3.0-7aa8c063e4cbdb7a9bdd2bfc3b3d7224832d855a.jar"
         jar="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\libs\AMap_2DMap_V2.3.0.jar"
@@ -24,25 +36,13 @@
         jar="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\ClipImage\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="89a60b791ce48d964c304fa4108365ffd6570c3c"/>
+        sha1="ba93a71fa6bb894785dc78ed2e3d9c108bb46b83"/>
     <item
         dex="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-91bb94f9d900d7b0d15cbc7cd185babad81974cc.jar"
         jar="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\IMageLoader\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="19573fe340ee91a0c17e8397f35f4a8f7918d9aa"/>
-    <item
-        dex="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\pre-dexed\debug\Android_Location_V1.3.0-7bd6866c7fa3692c3de346018c42808d565f0639.jar"
-        jar="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\libs\Android_Location_V1.3.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="2ffeb17da57de5b5e57ec44c6397fb4d682cf0db"/>
-    <item
-        dex="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-49e57448c087bba84e5673d953290ca91ff1dbbf.jar"
-        jar="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+        sha1="227d0abaed1d7bb44b0738f8a85e06f083fbdbb6"/>
     <item
         dex="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-56271e49becd6e797ee63b6fbb543daaaabb0577.jar"
         jar="D:\Develop Tool\Android\android-studio_sdk\android-studio1\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
@@ -50,11 +50,17 @@
         revision="20.0.0"
         sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
     <item
+        dex="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\pre-dexed\debug\Android_Location_V1.3.0-7bd6866c7fa3692c3de346018c42808d565f0639.jar"
+        jar="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\libs\Android_Location_V1.3.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="2ffeb17da57de5b5e57ec44c6397fb4d682cf0db"/>
+    <item
         dex="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-077fcd1189b9ea737a52b707062af206b6ce6366.jar"
         jar="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\GestureImageView\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="ecf57c07085e947fa96a3248564ead348b3c4274"/>
+        sha1="3aab19ea932b08a62de59684aede827b96192b92"/>
     <item
         dex="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\pre-dexed\debug\AMap_Services_V2.3.0-981ac52aec19d8db46cf487187c4735a28f896e8.jar"
         jar="G:\Android_studio_workspace\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\libs\AMap_Services_V2.3.0.jar"

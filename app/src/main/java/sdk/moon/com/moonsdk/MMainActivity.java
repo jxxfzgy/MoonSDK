@@ -6,10 +6,11 @@ import android.view.View;
 import android.widget.TextView;
 
 import sdk.moon.com.moonsdk.abst.MBaseActivity;
-import sdk.moon.com.moonsdk.amap.MLocationActivity;
-import sdk.moon.com.moonsdk.clipimage.MClipImageActivity;
-import sdk.moon.com.moonsdk.gestureview.MGestureViewActivity;
-import sdk.moon.com.moonsdk.imageloader.MImageLoadActivity;
+import sdk.moon.com.moonsdk.model.amap.MLocationActivity;
+import sdk.moon.com.moonsdk.model.clipimage.MClipImageActivity;
+import sdk.moon.com.moonsdk.model.gestureview.MGestureViewActivity;
+import sdk.moon.com.moonsdk.model.imageloader.MImageLoadActivity;
+import sdk.moon.com.moonsdk.model.loopviewpager.MLoopViewActivity;
 
 
 public class MMainActivity extends MBaseActivity {
@@ -47,6 +48,10 @@ public class MMainActivity extends MBaseActivity {
     }
     public void testClip(View view){
         Intent intent = new Intent(this,MClipImageActivity.class) ;
+        startActivity(intent);
+    }
+    public void testLoopView(View view){
+        Intent intent = new Intent(this,MLoopViewActivity.class) ;
         startActivity(intent);
     }
 

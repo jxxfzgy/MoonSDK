@@ -41,5 +41,12 @@
         android:text="buttonClip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@id/buttonClip"
+        android:id="@+id/buttonLoopView"
+        android:onClick="testLoopView"
+        android:text="buttonLoopView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

@@ -1,1 +1,1 @@
-include ':app', ':AMap', ':IMageLoader', ':GestureImageView', ':ClipImage'
+include ':app', ':AMap', ':IMageLoader', ':GestureImageView', ':ClipImage', ':LoopViewPager'

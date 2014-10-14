@@ -31,19 +31,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".amap.MLocationActivity"
+            android:name=".model.amap.MLocationActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".imageloader.MImageLoadActivity"
+            android:name=".model.imageloader.MImageLoadActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".gestureview.MGestureViewActivity"
+            android:name=".model.gestureview.MGestureViewActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".clipimage.MClipImageActivity"
+            android:name=".model.clipimage.MClipImageActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".clipimage.MShowClipActivity"
+            android:name=".model.clipimage.MShowClipActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.loopviewpager.MLoopViewActivity"
             android:screenOrientation="portrait"/>
     </application>
 

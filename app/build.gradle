@@ -26,4 +26,5 @@ dependencies {
     compile project(':IMageLoader')
     compile project(':GestureImageView')
     compile project(':ClipImage')
+    compile project(':LoopViewPager')
 }
