@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/ClipImage/ClipImage.iml" filepath="$PROJECT_DIR$/ClipImage/ClipImage.iml" />
       <module fileurl="file://$PROJECT_DIR$/GestureImageView/GestureImageView.iml" filepath="$PROJECT_DIR$/GestureImageView/GestureImageView.iml" />
       <module fileurl="file://$PROJECT_DIR$/IMageLoader/IMageLoader.iml" filepath="$PROJECT_DIR$/IMageLoader/IMageLoader.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MoonSdk.iml" filepath="$PROJECT_DIR$/MoonSdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
