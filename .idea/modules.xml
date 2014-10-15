@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/GestureImageView/GestureImageView.iml" filepath="$PROJECT_DIR$/GestureImageView/GestureImageView.iml" />
       <module fileurl="file://$PROJECT_DIR$/IMageLoader/IMageLoader.iml" filepath="$PROJECT_DIR$/IMageLoader/IMageLoader.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoopViewPager/LoopViewPager.iml" filepath="$PROJECT_DIR$/LoopViewPager/LoopViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MoonSDK.iml" filepath="$PROJECT_DIR$/MoonSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

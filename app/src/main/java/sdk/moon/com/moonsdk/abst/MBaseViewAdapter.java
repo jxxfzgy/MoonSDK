@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2014/10/15 0015.
  */
-public abstract class MBaseViewAdapter<T> extends PagerAdapter{
+public abstract class MBaseViewAdapter<T> extends PagerAdapter {
 
     private LayoutInflater inflater ;
 

@@ -1,18 +1,17 @@
 package sdk.moon.com.moonsdk.model.loopviewpager;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.util.Log;
 
-import com.moon.sdk.loopviewpager.LoopPagerAdapterWrapper;
-import com.moon.sdk.loopviewpager.LoopViewPager;
+import com.moon.sdk.loopviewpager.loop1.LoopViewPager;
+import com.moon.sdk.loopviewpager.loop1.ViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import sdk.moon.com.moonsdk.R;
 import sdk.moon.com.moonsdk.abst.MBaseActivity;
-import sdk.moon.com.moonsdk.adapter.MLoopAdapter;
+import sdk.moon.com.moonsdk.adapter.MLoopMaxAdapter;
 import sdk.moon.com.moonsdk.entity.MLoopViewBean;
 
 /**
@@ -21,7 +20,7 @@ import sdk.moon.com.moonsdk.entity.MLoopViewBean;
  */
 public class MLoopViewActivity extends MBaseActivity {
     private LoopViewPager mLoopViewPager ;
-    private MLoopAdapter mLoopAdapter ;
+    private MLoopMaxAdapter mLoopMaxAdapter ;
     private List<MLoopViewBean> loopViewBeans ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,11 +42,12 @@ public class MLoopViewActivity extends MBaseActivity {
 
     @Override
     public void initView() {
-        mLoopAdapter = new MLoopAdapter(gContext ,loopViewBeans) ;
+        mLoopMaxAdapter = new MLoopMaxAdapter(gContext,loopViewBeans) ;
         mLoopViewPager = findView(R.id.loopViewPager) ;
-        mLoopViewPager.setAdapter(mLoopAdapter);
+
+        mLoopViewPager.setAdapter(mLoopMaxAdapter);
         mLoopViewPager.setOffscreenPageLimit(3);
-        mLoopViewPager.setPageMargin(-300);
+        mLoopViewPager.setPageMargin(-250);
         mLoopViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int i, float v, int i2) {
@@ -56,7 +56,7 @@ public class MLoopViewActivity extends MBaseActivity {
 
             @Override
             public void onPageSelected(int i) {
-                Log.v("zgy", "=============position================" + i) ;
+                Log.v("zgy", "=============position================" + i % loopViewBeans.size()) ;
             }
 
             @Override

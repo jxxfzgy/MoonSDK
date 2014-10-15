@@ -1,12 +1,10 @@
 package sdk.moon.com.moonsdk.adapter;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
-
-import com.moon.sdk.loopviewpager.LoopPagerAdapterWrapper;
 
 import java.util.List;
 
@@ -31,7 +29,7 @@ public class MLoopAdapter extends MBaseViewAdapter<MLoopViewBean> {
 
     @Override
     public void showData(View view ,int position) {
-        ImageView imageView = (ImageView)view.findViewById(R.id.item_loop_img) ;
+        ImageView imageView = findView(view,R.id.item_loop_img) ;
         imageView.setImageResource(getItem(position).drawableId);
     }
 }

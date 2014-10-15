@@ -5,11 +5,11 @@
     tools:context=".MMainActivity">
 
 
-    <com.moon.sdk.loopviewpager.LoopViewPager
+    <com.moon.sdk.loopviewpager.loop1.LoopViewPager
         android:id="@+id/loopViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </com.moon.sdk.loopviewpager.LoopViewPager>
+    </com.moon.sdk.loopviewpager.loop1.LoopViewPager>
 
 
 </RelativeLayout>
