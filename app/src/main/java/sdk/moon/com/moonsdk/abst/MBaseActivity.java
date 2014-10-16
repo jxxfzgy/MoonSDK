@@ -16,6 +16,7 @@ import sdk.moon.com.moonsdk.core.intf.MIFactory;
 public abstract class MBaseActivity extends FragmentActivity {
     /*测试图片地址*/
     public String imgUrl = "http://img.my.csdn.net/uploads/201407/26/1406382789_7174.jpg" ;
+    public String imgUrl1 = "http://img.my.csdn.net/uploads/201309/01/1378037234_3539.jpg" ;
     public Context gContext ;
     public MIFactory gIFactory;
     @Override

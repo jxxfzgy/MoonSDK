@@ -58,6 +58,6 @@ public class MClipImageActivity extends MBaseActivity {
     @Override
     public void initView() {
         clipImageLayout = findView(R.id.clipImage) ;
-        miImageLoader.loadNormalImage(imgUrl,clipImageLayout.getZoomImageView());
+        miImageLoader.loadNormalImage(imgUrl1,clipImageLayout.getZoomImageView());
     }
 }

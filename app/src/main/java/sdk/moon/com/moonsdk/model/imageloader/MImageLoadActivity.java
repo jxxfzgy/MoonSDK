@@ -22,7 +22,7 @@ public class MImageLoadActivity extends MBaseActivity {
     /*普通图片显示组件*/
     private ImageView showNormalImage ;
 
-    private String imgUrl = "http://img.my.csdn.net/uploads/201309/01/1378037234_3539.jpg" ;
+
 
     private String resUrl = R.drawable.test+"" ;
 
