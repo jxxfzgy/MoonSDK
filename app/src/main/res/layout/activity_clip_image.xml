@@ -3,6 +3,7 @@
     xmlns:gesture-image="http://schemas.polites.com/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     tools:context=".MMainActivity">
 
 

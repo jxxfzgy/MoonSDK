@@ -63,7 +63,7 @@ public class ClipImageBorderView extends View
 		mWidth = getWidth() - 2 * mHorizontalPadding;
 		// 计算距离屏幕垂直边界 的边距
 		mVerticalPadding = (getHeight() - mWidth) / 2;
-		mPaint.setColor(Color.parseColor("#aa000000"));
+		mPaint.setColor(Color.parseColor("#a0000000"));
 		mPaint.setStyle(Style.FILL);
 		// 绘制左边1
 		canvas.drawRect(0, 0, mHorizontalPadding, getHeight(), mPaint);

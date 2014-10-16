@@ -354,6 +354,7 @@ public class ClipZoomImageView extends ImageView implements
 			// 垂直方向的边距
 			mVerticalPadding = (getHeight() - (getWidth() - 2 * mHorizontalPadding)) / 2;
 
+
 			int width = getWidth();
 			int height = getHeight();
 			// 拿到图片的宽和高
@@ -380,6 +381,14 @@ public class ClipZoomImageView extends ImageView implements
 				float scaleH = (getHeight() * 1.0f - mVerticalPadding * 2) / dh;
 				scale = Math.max(scaleW, scaleH);
 			}
+
+            if(dw > getWidth() - mHorizontalPadding * 2
+                    && dh > getHeight() - mVerticalPadding * 2){
+                float scaleW = (getWidth() * 1.0f - mHorizontalPadding * 2)
+                        / dw;
+                float scaleH = (getHeight() * 1.0f - mVerticalPadding * 2) / dh;
+                scale = Math.max(scaleW, scaleH);
+            }
 
 			initScale = scale;
 			SCALE_MID = initScale * 2;
