@@ -2,12 +2,10 @@ package com.moon.sdk.imgloader.abst;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.util.Log;
 
-import com.moon.sdk.imgloader.LoadType;
+import com.moon.sdk.imgloader.MLoadType;
 import com.moon.sdk.imgloader.R;
 import com.moon.sdk.imgloader.displayer.MCircleDisplay;
-import com.moon.sdk.imgloader.intf.MIImageLoader;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
 import com.nostra13.universalimageloader.cache.disc.naming.HashCodeFileNameGenerator;
 import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
@@ -83,19 +81,19 @@ public abstract class MAImageLoader {
     /**
      *  转换加载地址
      * @param url
-     * @param loadType
+     * @param MLoadType
      * @return
      */
-    public String getLoadType(String url, LoadType loadType) {
-        if(loadType == LoadType.LOADING_NET){
+    public String getLoadType(String url, MLoadType MLoadType) {
+        if(MLoadType == MLoadType.LOADING_NET){
 
-        }else if(loadType == LoadType.LOADING_LOCAL){
+        }else if(MLoadType == MLoadType.LOADING_LOCAL){
             url = getLocalPath(url) ;
-        }else if(loadType == LoadType.LOADING_RES){
+        }else if(MLoadType == MLoadType.LOADING_RES){
             url = getResPath(url) ;
-        }else if(loadType == LoadType.LOADING_ASSETS){
+        }else if(MLoadType == MLoadType.LOADING_ASSETS){
             url = getAssetsPath(url) ;
-        }else if(loadType == LoadType.LOADING_PROVIDER){
+        }else if(MLoadType == MLoadType.LOADING_PROVIDER){
             url = getProviderPath(url) ;
         }
         return url;

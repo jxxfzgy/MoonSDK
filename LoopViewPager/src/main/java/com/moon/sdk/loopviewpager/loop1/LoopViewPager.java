@@ -9,7 +9,7 @@ import android.view.View;
 import java.util.ArrayList;
 
 /**
- * Created by moon.zhong on 2014/10/15.
+ *
  */
 public class LoopViewPager extends ViewPager {
     private static final String TAG = "LoopViewPager";

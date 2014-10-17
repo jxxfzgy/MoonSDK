@@ -11,6 +11,7 @@ import sdk.moon.com.moonsdk.model.clipimage.MClipImageActivity;
 import sdk.moon.com.moonsdk.model.gestureview.MGestureViewActivity;
 import sdk.moon.com.moonsdk.model.imageloader.MImageLoadActivity;
 import sdk.moon.com.moonsdk.model.loopviewpager.MLoopViewActivity;
+import sdk.moon.com.moonsdk.model.ormlite.MOrmliteActivity;
 
 
 public class MMainActivity extends MBaseActivity {
@@ -52,6 +53,10 @@ public class MMainActivity extends MBaseActivity {
     }
     public void testLoopView(View view){
         Intent intent = new Intent(this,MLoopViewActivity.class) ;
+        startActivity(intent);
+    }
+    public void testOrmlite(View view){
+        Intent intent = new Intent(this,MOrmliteActivity.class) ;
         startActivity(intent);
     }
 

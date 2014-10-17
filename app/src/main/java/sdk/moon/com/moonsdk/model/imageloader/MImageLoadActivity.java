@@ -3,7 +3,7 @@ package sdk.moon.com.moonsdk.model.imageloader;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-import com.moon.sdk.imgloader.LoadType;
+import com.moon.sdk.imgloader.MLoadType;
 import com.moon.sdk.imgloader.intf.MIImageLoader;
 
 import sdk.moon.com.moonsdk.abst.MBaseActivity;
@@ -41,7 +41,7 @@ public class MImageLoadActivity extends MBaseActivity {
     public void initView() {
         showNormalImage = findView(R.id.showNormalImage) ;
         showCircleImage = findView(R.id.showCircleImage) ;
-        miImageLoader.loadImage(resUrl ,showCircleImage,MIImageLoader.CIRCLE_IMG, LoadType.LOADING_RES);
-        miImageLoader.loadImage(resUrl, showNormalImage, MIImageLoader.NORMAL_IMG, LoadType.LOADING_RES);
+        miImageLoader.loadImage(resUrl ,showCircleImage,MIImageLoader.CIRCLE_IMG, MLoadType.LOADING_RES);
+        miImageLoader.loadImage(resUrl, showNormalImage, MIImageLoader.NORMAL_IMG, MLoadType.LOADING_RES);
     }
 }

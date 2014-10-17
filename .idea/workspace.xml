@@ -3,8 +3,12 @@
   <component name="AndroidConfiguredLogFilters">
     <filters>
       <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="" />
         <option name="name" value="app: sdk.moon.com.moonsdk" />
         <option name="packageNamePattern" value="sdk.moon.com.moonsdk" />
+        <option name="pid" value="" />
       </filter>
     </filters>
   </component>
@@ -15,20 +19,225 @@
   </component>
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <target>android-20</target>
+      </config>
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ormlite.xml">
+        <config>
+          <theme>@android:style/Theme.Holo</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="zgy" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: sdk.moon.com.moonsdk" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cba6c07-6c9f-41cf-839a-ac14776d9fcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipImageBorderView.java" afterPath="$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipImageBorderView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipImageLayout.java" afterPath="$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipImageLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipZoomImageView.java" afterPath="$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipZoomImageView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_clip_image.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_clip_image.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/res/drawable-hdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/res/drawable-mdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/res/drawable-xhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/res/drawable-xxhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/AndroidCompiledStatement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/AndroidConnectionSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/AndroidDatabaseConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/AndroidDatabaseResults.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/AndroidLog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/compat/ApiCompatibility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/compat/ApiCompatibilityUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/ArgumentHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/BaseArgumentHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/BaseComparison.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/support/BaseConnectionSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/misc/BaseDaoEnabled.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/BaseDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/BaseDataType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/db/BaseDatabaseType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/BaseDateType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/BaseEnumType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/BaseFieldConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/BaseForeignCollection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/mapped/BaseMappedQuery.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/mapped/BaseMappedStatement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/db/BaseSqliteDatabaseType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/compat/BasicApiCompatibility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/Between.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/BigDecimalNumericType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/BigDecimalStringType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/BigIntegerType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/BooleanObjectType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/BooleanType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/ByteArrayType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/ByteObjectType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/ByteType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/CharType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/CharacterObjectType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/Clause.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/CloseableIterable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/CloseableIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/CloseableWrappedIterable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/CloseableWrappedIterableImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/ColumnArg.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/Comparison.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/support/CompiledStatement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/support/ConnectionSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/Dao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/DaoManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/DataPersister.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/DataPersisterManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/DataType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/support/DatabaseConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/support/DatabaseConnectionProxy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/support/DatabaseConnectionProxyFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/DatabaseField.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/DatabaseFieldConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/DatabaseFieldConfigLoader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/support/DatabaseResults.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/table/DatabaseTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/table/DatabaseTableConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/table/DatabaseTableConfigLoader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/DatabaseTableConfigUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/db/DatabaseType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/DateLongType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/DateStringType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/DateTimeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/DateType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/DeleteBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/DoubleObjectType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/DoubleType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/EagerForeignCollection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/EnumIntegerType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/EnumStringType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/Exists.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/FieldConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/FieldType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/FloatObjectType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/FloatType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/ForeignCollection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/ForeignCollectionField.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/support/GeneratedKeyHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/GenericRawResults.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/GenericRowMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/In.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/InSubQuery.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/IntType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/IntegerObjectType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/IsNotNull.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/IsNull.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/misc/JavaxPersistence.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/compat/JellyBeanApiCompatibility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/core/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/LazyForeignCollection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/logger/LocalLog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/logger/Log.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/logger/Logger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/logger/LoggerFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/LongObjectType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/LongStringType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/LongType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/LruObjectCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/entity/MApkInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/core/abst/MBaseOrmliteHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/entity/MContact.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/MDaoApkInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/MDaoContact.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/core/abst/MDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/core/itf/MIDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/ormlite/MOrmliteActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/core/MOrmliteHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/ManyClause.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/mapped/MappedCreate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/mapped/MappedDelete.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/mapped/MappedDeleteCollection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/mapped/MappedPreparedStmt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/mapped/MappedQueryForId.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/mapped/MappedRefresh.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/mapped/MappedUpdate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/mapped/MappedUpdateId.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/NeedsFutureClause.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/Not.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/NullArgHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/ObjectCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/table/ObjectFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/apptools/OpenHelperManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/OrderBy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/apptools/OrmLiteBaseActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/apptools/OrmLiteBaseActivityGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/apptools/OrmLiteBaseListActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/apptools/OrmLiteBaseService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/apptools/OrmLiteBaseTabActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/apptools/OrmLiteConfigUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/apptools/OrmLiteSqliteOpenHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/OrmliteDatabase.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/PreparedDelete.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/PreparedQuery.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/PreparedStmt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/PreparedUpdate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/QueryBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/core/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/Raw.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/RawResultsImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/RawRowMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/RawRowMapperImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/RawRowObjectMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/ReferenceObjectCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/support/ReflectionDatabaseConnectionProxyFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/RuntimeExceptionDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/SelectArg.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/SelectIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/SerializableType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/SetExpression.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/SetValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/ShortObjectType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/ShortType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/query/SimpleComparison.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/SqlDateType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/misc/SqlExceptionUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/SqlType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/db/SqliteAndroidDatabaseType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/StatementBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/StatementExecutor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/StringBytesType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/StringType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/table/TableInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/table/TableUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/ThreadLocalSelectArg.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/TimeStampType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/misc/TransactionManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/UpdateBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/UuidType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/misc/VersionUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/field/types/VoidType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/Where.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ormlite.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/proguard-rules.pro" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OrmliteDatabase/src/main/res/values/strings.xml" />
+      <change type="MOVED" beforePath="C:\Users\moon.zhong\Desktop\MoonSDK\IMageLoader\src\main\java\com\moon\sdk\imgloader\LoadType.java" afterPath="$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/MLoadType.java" />
+      <change type="MOVED" beforePath="C:\Users\moon.zhong\Desktop\MoonSDK\LoopViewPager\src\main\java\com\moon\sdk\loopviewpager\loop1\MLoopAdapter.java" afterPath="$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop1/MBaseLoopAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\moon.zhong\Desktop\MoonSDK\app\src\main\java\sdk\moon\com\moonsdk\adapter\MLoopMaxAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/adapter/MBaseLoopMaxAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop1/LoopViewPager.java" afterPath="$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop1/LoopViewPager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/abst/MAImageLoader.java" afterPath="$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/abst/MAImageLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/intf/MIImageLoader.java" afterPath="$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/intf/MIImageLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/imageloader/MImageLoadActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/imageloader/MImageLoadActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/MImageLoaderImpl.java" afterPath="$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/MImageLoaderImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/loopviewpager/MLoopViewActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/loopviewpager/MLoopViewActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/MMainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/MMainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MoonSDK.iws" />
@@ -57,116 +266,113 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MBaseActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/abst/MBaseActivity.java">
+      <file leaf-file-name="MOrmliteActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/ormlite/MOrmliteActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1342">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="25" />
+            <state vertical-scroll-proportion="4.6465516" vertical-offset="0" max-vertical-offset="2618">
+              <caret line="98" column="11" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
               <folding>
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1037#1038#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2857#2873#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClipImageLayout.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipImageLayout.java">
+      <file leaf-file-name="MContact.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/entity/MContact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="1408">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClipZoomImageView.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipZoomImageView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26774848" vertical-offset="7722" max-vertical-offset="10142">
-              <caret line="384" column="0" selection-start-line="384" selection-start-column="0" selection-end-line="390" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClipImageBorderView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipImageBorderView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1025" max-vertical-offset="1914">
-              <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MClipImageActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/clipimage/MClipImageActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="1254">
-              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_clip_image.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_clip_image.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.642858" vertical-offset="0" max-vertical-offset="506">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MFactoryImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/core/MFactoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="321" max-vertical-offset="814">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1408">
+              <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
               <folding>
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MAMapFactoryImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AMap/src/main/java/com/moon/amap/sdk/MAMapFactoryImpl.java">
+      <file leaf-file-name="MApkInfo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/entity/MApkInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="902">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MLocationActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/amap/MLocationActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1430">
-              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1276">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding>
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#911#912#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#632#633#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#708#709#0" expanded="true" />
+                <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MILocateService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AMap/src/main/java/com/moon/amap/sdk/intf/MILocateService.java">
+      <file leaf-file-name="MDaoApkInfo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/MDaoApkInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="1254">
-              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MBaseOrmliteHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/core/abst/MBaseOrmliteHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="1386">
+              <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MOrmliteHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/core/MOrmliteHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="321" max-vertical-offset="1144">
+              <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#646#647#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TableUtils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/table/TableUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="562" max-vertical-offset="11264">
+              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MDaoContact.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/MDaoContact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -201,6 +407,10 @@
               <ExternalProjectPojo>
                 <option name="name" value=":app" />
                 <option name="path" value="$PROJECT_DIR$/app" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":OrmliteDatabase" />
+                <option name="path" value="$PROJECT_DIR$/OrmliteDatabase" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":GestureImageView" />
@@ -2719,6 +2929,398 @@
             </list>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/OrmliteDatabase">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the Android dependencies of the project" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="androidDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all variants of all applications and secondary packages." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Debug builds" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="assembleDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="assembleDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="assembleDefault" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Release builds" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="assembleRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a bundle containing the library in Debug." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="bundleDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a bundle containing the library in Release." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="bundleRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="checkDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="checkReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileDebugAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileDebugJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileDebugNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileDebugTestAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileDebugTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileDebugTestNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileDebugTestRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileReleaseAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileReleaseJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileReleaseNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="compileReleaseRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs and runs the tests for Build 'debug' on connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="connectedAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks on currently connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="connectedCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="copyDebugLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="copyReleaseLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="deviceCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="dexDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateDebugBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateDebugResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateDebugSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateDebugTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateDebugTestBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateDebugTestResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateDebugTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateDebugTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateReleaseBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateReleaseResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="generateReleaseSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="installDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on all variants." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="lint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="lintDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Release build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="lintRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="mergeDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="mergeDebugProguardFiles" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="mergeDebugTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="mergeDebugTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="mergeReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="mergeReleaseProguardFiles" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="packageDebugJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="packageDebugJniLibs" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="packageDebugLocalJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="packageDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="packageDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="packageDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="packageReleaseJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="packageReleaseJniLibs" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="packageReleaseLocalJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="packageReleaseRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="packageReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="preBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="preDebugBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="preDebugTestBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="preDexDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="preReleaseBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="prepareDebugDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="prepareDebugTestDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="prepareReleaseDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="processDebugJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="processDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="processDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="processDebugTestJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="processDebugTestManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="processDebugTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="processReleaseJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="processReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="processReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the signing info for each variant" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="signingReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstall all applications." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="uninstallAll" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="uninstallDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/OrmliteDatabase" />
+                <option name="name" value="validateDebugSigning" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app">
           <value>
             <list>
@@ -3062,6 +3664,11 @@
                 <option name="name" value="prepareMoonSDKLoopViewPagerUnspecifiedLibrary" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare MoonSDK:OrmliteDatabase:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareMoonSDKOrmliteDatabaseUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareReleaseDependencies" />
               </ExternalTaskPojo>
@@ -3141,7 +3748,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="11306835908385" />
+        <entry key="$PROJECT_DIR$" value="12720719949427" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -3610,6 +4217,81 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
+                  <entry key="$PROJECT_DIR$/OrmliteDatabase">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/0.12.2/6d4cfb0cfbda5e9d20bc424412c4b9ec9f4a19e7/gradle-0.12.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/0.12.2/786baefe9fc55777558acbba1bc1d9c6ec0925a8/gradle-0.12.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-base/4.11/d0b8cbe4419385f72f3d31b39888edfcb10210df/proguard-base-4.11-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-base/4.11/76730af417bb42da22b16e49f49e67863382b9bd/proguard-base-4.11.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/4.11/1d80d5ed2daa1a3a2b6e7a45b40fd36ffed78f2b/proguard-gradle-4.11-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/4.11/da875d4b67a8be6c770b11d894434843714ac69d/proguard-gradle-4.11.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt.core.compiler/ecj/4.2.2/fb9dc21349d06dd00b395af5c42f299df828f9da/ecj-4.2.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt.core.compiler/ecj/4.2.2/d9fd79499c664bccaf24dbe04be417de6c6af64a/ecj-4.2.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.1/1fdf61e5ba87e0e4676c22677e0b2fe3a05c2fd8/httpcore-4.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.1/33fc26c02f8043ab0ede19eadc8c9885386b255c/httpcore-4.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/f3f156cbff0e0fb0d64bfce31a352cce4a33bc19/commons-logging-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.4/5310da9f90e843883309e9e0bf5950faa79882a0/commons-codec-1.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.4/4216af16d38465bbab0f3dff8efa14204f7a399a/commons-codec-1.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.1.1/42f6189003f355107f53b937770092517de69710/httpclient-4.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.1.1/3d1d918f32709e33ba7ddb2c4e8d1c543ebe713e/httpclient-4.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/36b6a585c0f0c63bd85fb04db0dcb7b217298956/guava-15.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/ed727a8d9f247e2050281cb083f1c77b09dcb5cd/guava-15.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/23.0.2/1ce8cf32b730a69e4f9b16c0078442143df309ee/common-23.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/23.0.2/4d5ff345915e0af52765039b75adce89fae798af/common-23.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/309cd2cff7260e465792fda3dcbb063b730d8050/kxml2-2.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/ccbc77a5fd907ef863c29f3596c6f54ffa4e9442/kxml2-2.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/23.0.2/5a2bb46f7417e36db4d749d75feadc1cdb517154/layoutlib-api-23.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/23.0.2/d97fb910dafd7b29bdff95296dcd2649fadef02e/layoutlib-api-23.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.1/3ac83213baeab2b21fde6c0bf47ed68ea3e6a8da/httpmime-4.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.1/9ba2dcdf94ce35c8a8e9bff242db0618ca932e92/httpmime-4.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/23.0.2/adbb63f74ac78ebd587129013401f64b2506e293/dvlib-23.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/23.0.2/e37720cb9d7e2775a4b8b22b12bbb4bb9187c8bf/dvlib-23.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/3caea4421428752206c7a94c3e3097f0c47f1bb8/commons-compress-1.8.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/23.0.2/e24a72b4b0d19e23c95b716e69334df2fe576dbb/sdklib-23.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/23.0.2/74dc50f859e787a548641d613a04ce2a7cf48bee/sdklib-23.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/23.0.2/1bdeba66c61698c8307461eab429e784f8836196/sdk-common-23.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/23.0.2/ec49e38e6c2ae9d7003f7836fe865b39aeba77fe/sdk-common-23.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/0.12.2/86cd9891a57490ae5e8b7f6fbcd2f6d3c8b7ea3f/builder-model-0.12.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/0.12.2/ea4eff69bb86efd0e6b2055ba0b3314779033be6/builder-model-0.12.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/4.0/4a33d6206d6d442446a8edbd2b0798ecfaebc229/asm-4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/4.0/659add6efc75a4715d738e73f07505246edf4d66/asm-4.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.lombok/lombok-ast/0.2.2/47ebe619db7def288aad08bd65d26eea6d67f8ee/lombok-ast-0.2.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.lombok/lombok-ast/0.2.2/57e560b535ceaa14fb6f15422d74594acd6c5b64/lombok-ast-0.2.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/4.0/4a33d6206d6d442446a8edbd2b0798ecfaebc229/asm-tree-4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/4.0/67bd266cd17adcee486b76952ece4cc85fe248b8/asm-tree-4.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/23.0.2/d757652f175aa0915531af75c4948a4d546610a7/lint-api-23.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/23.0.2/9660c0f32f9308dd2ac998f4928cebcd4095b27/lint-api-23.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/4.0/4a33d6206d6d442446a8edbd2b0798ecfaebc229/asm-analysis-4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/4.0/1c45d52b6f6c638db13cf3ac12adeb56b254cdd7/asm-analysis-4.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/23.0.2/9c99007fa60eac2651c6a73263e0f0f555ef0983/lint-checks-23.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/23.0.2/e6fe7bac82c4845d3e69e0dd54b1801a91568ffd/lint-checks-23.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/23.0.2/c36565dd9bfbb64d2492a41c83bae573da7a5274/lint-23.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/23.0.2/e247d675952dd9f24f6b064bac3d7d1639d0043e/lint-23.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/23.0.2/c8fef789d4495cd50ba2fd974ee1cd3dec24b90c/ddmlib-23.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/23.0.2/3e454a33c6790eb497c725f346cd2b80cb67ff6d/ddmlib-23.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/23.0.2/a81cbf40d2b0fa03e1a34ccd2713a2c6bfc48aea/manifest-merger-23.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/23.0.2/93c8f86db4a5ad8e8f034c672b85594326268a9c/manifest-merger-23.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/0.12.2/e768f7c2024a6673883b78e4f645e5e5e599c2d8/builder-test-api-0.12.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/0.12.2/a7f31faaee3de23ba810c109abc1658715f4416d/builder-test-api-0.12.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/1b2a0925ff06220c0261b6fd468183cd9e9a9a47/javawriter-2.5.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/81241ff7078ef14f42ea2a8995fa09c096256e6b/javawriter-2.5.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.48/3824866f059053c43b118eb5a067ea1800d8c913/bcprov-jdk15on-1.48-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.48/960dea7c9181ba0b17e8bab0c06a43f0a5f04e65/bcprov-jdk15on-1.48.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.48/8cff777fce5ef53cc35fa569faa8d12faaf34a78/bcpkix-jdk15on-1.48-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.48/28b7614b908a47844bb27e3c94b45b6893656265/bcpkix-jdk15on-1.48.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/0.12.2/cbbbe556e0103ceb734ac7a269ecb9a9e2f33d4c/builder-0.12.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/0.12.2/3673e1c415b054caccc3231dcdff959cfcb315f6/builder-0.12.2.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/OrmliteDatabase" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
                   <entry key="$PROJECT_DIR$/app">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
@@ -3788,17 +4470,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/IMageLoader/build.gradle" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/ClipImage/.gitignore" />
         <option value="$PROJECT_DIR$/LoopViewPager/.gitignore" />
         <option value="$PROJECT_DIR$/LoopViewPager/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/LoopPagerAdapterWrapper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/adapter/MBaseViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/entity/LoopViewBean.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/MMainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/LoopViewPager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/abst/MBaseViewAdapter.java" />
         <option value="$PROJECT_DIR$/LoopViewPager/src/main/java/com/kiguruming/loopviewpager/ViewPager.java" />
@@ -3807,11 +4484,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/adapter/MLoopMaxAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_loop_viewpager.xml" />
         <option value="$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/PagerAdapter.java" />
-        <option value="$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop1/LoopViewPager.java" />
         <option value="$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/MBaseViewAdapter.java" />
         <option value="$PROJECT_DIR$/LoopViewPager/src/main/java/com/antonyt/infiniteviewpager/InfiniteViewPager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/application/MApplication.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop4/InfinitePagerAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_loop_viewpager.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/loopviewpager/MLoopViewActivity.java" />
@@ -3824,6 +4499,28 @@
         <option value="$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipImageLayout.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_clip_image.xml" />
         <option value="$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipImageBorderView.java" />
+        <option value="$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop1/LoopViewPager.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/db/DatabaseType.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/IDao.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/MIDao.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/MDaoImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/ormlite/TOrmliteActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_ormlite.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/MMainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/itf/MIDao.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/entity/ApkInfo.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/itf/MDaoApkInfo.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/entity/MApkInfo.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/entity/MContact.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/MBaseOrmliteHelper.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/itf/MDaoImpl.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/itf/MBaseOrmliteHelper.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/MOrmliteHelper.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/MDaoContact.java" />
+        <option value="$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/MDaoApkInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/ormlite/MOrmliteActivity.java" />
       </list>
     </option>
   </component>
@@ -3863,7 +4560,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3872,391 +4569,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IMageLoader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IMageLoader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IMageLoader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClipImage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClipImage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClipImage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clipimage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moonsdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moonsdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moonsdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clipimage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moonsdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moonsdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoonSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moonsdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abst" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4269,7 +4584,7 @@
     <property name="recentsLimit" value="5" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="3435c4b8" />
     <property name="FullScreen" value="false" />
-    <property name="android.project.structure.last.selected" value="LoopViewPager" />
+    <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="64" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -4297,10 +4612,14 @@
       <recent name="com.moon.sdk.loopviewpager" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\moon.zhong\Desktop\MoonSDK\app\src\main\res\layout" />
+      <recent name="C:\Users\moon.zhong\Desktop\MoonSDK\OrmliteDatabase\src\main\java" />
+      <recent name="C:\Users\moon.zhong\Desktop\MoonSDK\OrmliteDatabase\src" />
       <recent name="C:\Users\moon.zhong\Desktop\MoonSDK\LoopViewPager\src\main\java" />
       <recent name="C:\Users\moon.zhong\Desktop\MoonSDK\LoopViewPager\src\main\java\com\moon\sdk\loopviewpager" />
-      <recent name="G:\Android_studio_workspace\MoonSDK\app\src\main\res\layout" />
-      <recent name="G:\Android_studio_workspace\MoonSDK\LoopViewPager\src\main\java\com\moon\sdk\loopviewpager" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\moon.zhong\Desktop\MoonSDK\OrmliteDatabase\src\main\java" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -4487,8 +4806,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -4541,256 +4860,46 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop3/PagerAdapter.java">
+    <entry file="file://$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/displayer/MCircleDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5638" max-vertical-offset="6248">
-          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1452">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop1/ViewPager.java">
+    <entry file="file://$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/intf/MIImageLoaderFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="26593" max-vertical-offset="61908">
-          <caret line="1307" column="24" selection-start-line="1307" selection-start-column="24" selection-end-line="1307" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="484">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/MBaseViewAdapter.java">
+    <entry file="file://$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/MImageLoaderFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1144">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="682">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop2/LoopingPagerAdapterWrapper.java">
+    <entry file="file://$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/MImageLoaderImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2736">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop3/LoopViewPager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="18893" max-vertical-offset="63470">
-          <caret line="1074" column="44" selection-start-line="1074" selection-start-column="44" selection-end-line="1074" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop2/LoopingViewPager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="3960">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/entity/MLoopViewBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="506">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop4/InfiniteViewPager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1430">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1320">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3652">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/application/MApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="836">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/abst/MAImageLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8235294" vertical-offset="2190" max-vertical-offset="3168">
-          <caret line="145" column="36" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/gestureview/MGestureViewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="1254">
-          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="1254">
+          <caret line="38" column="79" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop4/MinFragmentPagerAdapter.java">
+    <entry file="file://$PROJECT_DIR$/AMap/src/main/java/com/moon/amap/sdk/MAMapFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="1364">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop4/InfinitePagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="2574">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_gesture_imageview.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="550">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/adapter/MLoopAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37931034" vertical-offset="0" max-vertical-offset="870">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/adapter/MLoopMaxAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="682">
-          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop1/MLoopAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1056">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/loopviewpager/MLoopViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="1364">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop1/LoopViewPager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.35699797" vertical-offset="330" max-vertical-offset="9240">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_loop_viewpager.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5" vertical-offset="0" max-vertical-offset="462">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-20/android/graphics/Canvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="20252" max-vertical-offset="39820">
-          <caret line="987" column="16" selection-start-line="987" selection-start-column="16" selection-end-line="987" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-20/android/graphics/Paint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17238" max-vertical-offset="48378">
-          <caret line="851" column="23" selection-start-line="851" selection-start-column="23" selection-end-line="851" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-20/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326572" vertical-offset="241946" max-vertical-offset="425172">
-          <caret line="11290" column="19" selection-start-line="11290" selection-start-column="19" selection-end-line="11290" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/abst/MBaseViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="695" max-vertical-offset="1188">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="e#1169#1170#0" expanded="false" />
-            <element signature="e#1201#1202#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/amap/MAMapActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="594">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/clipimage/MShowClipActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-20/android/view/ViewTreeObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1728" max-vertical-offset="21868">
-          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-20/android/widget/ImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11254" max-vertical-offset="26224">
-          <caret line="578" column="16" selection-start-line="578" selection-start-column="16" selection-end-line="578" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-20/android/graphics/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="14114" max-vertical-offset="17886">
-          <caret line="725" column="16" selection-start-line="725" selection-start-column="16" selection-end-line="725" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-20/android/view/ScaleGestureDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1398" max-vertical-offset="12694">
-          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/LoadType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="506">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="902">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -4802,164 +4911,403 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/intf/MIImageLoaderFactory.java">
+    <entry file="file://$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/MLoadType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="484">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="506">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/imageloader/MImageLoadActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="519" max-vertical-offset="1012">
-          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/MImageLoaderImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22916667" vertical-offset="264" max-vertical-offset="3652">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IMageLoader/src/main/java/com/moon/sdk/imgloader/MImageLoaderFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="682">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#550#551#0" expanded="false" />
-            <element signature="e#595#596#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/MMainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="1144">
-          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/core/intf/MIFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AMap/src/main/java/com/moon/amap/sdk/intf/MIAMapFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AMap/src/main/java/com/moon/amap/sdk/MLocateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2688" max-vertical-offset="3168">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AMap/src/main/java/com/moon/amap/sdk/MAMapFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="902">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/core/MFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="321" max-vertical-offset="814">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AMap/src/main/java/com/moon/amap/sdk/intf/MILocateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="1254">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/amap/MLocationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1430">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/abst/MBaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1342">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="1298">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop4/MinFragmentPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="1364">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop4/InfiniteViewPager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1430">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop4/InfinitePagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2574">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop3/PagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5755" max-vertical-offset="6248">
+          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop3/LoopViewPager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6732" max-vertical-offset="63382">
+          <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop1/LoopViewPager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9240">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop1/MBaseLoopAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1056">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/MBaseViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1144">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop2/LoopingPagerAdapterWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="3124">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoopViewPager/src/main/java/com/moon/sdk/loopviewpager/loop2/LoopingViewPager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3960">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/abst/MBaseViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1144">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/db/SqliteAndroidDatabaseType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1540">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AMap/src/main/java/com/moon/amap/sdk/entity/MLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4361055" vertical-offset="1333" max-vertical-offset="1826">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/table/DatabaseTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15212981" vertical-offset="585" max-vertical-offset="1078">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/core/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-19/android/content/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="20384" max-vertical-offset="63492">
+          <caret line="988" column="25" selection-start-line="988" selection-start-column="25" selection-end-line="988" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/db/DatabaseType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5170">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-19/android/database/sqlite/SQLiteClosable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3326572" vertical-offset="958" max-vertical-offset="2156">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
           <folding>
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#3200#3201#0" expanded="false" />
+            <element signature="e#3234#3235#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/clipimage/MClipImageActivity.java">
+    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-19/android/database/sqlite/SQLiteOpenHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="1254">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5270" max-vertical-offset="8030">
+          <caret line="277" column="22" selection-start-line="277" selection-start-column="22" selection-end-line="277" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_clip_image.xml">
+    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-19/java/lang/reflect/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-19/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3326572" vertical-offset="16424" max-vertical-offset="28094">
+          <caret line="821" column="15" selection-start-line="821" selection-start-column="11" selection-end-line="821" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Develop Tool/android-studio/android-studio1/sdk/sources/android-19/java/lang/reflect/ParameterizedType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46653143" vertical-offset="584" max-vertical-offset="1474">
+          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ormlite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.571428" vertical-offset="0" max-vertical-offset="924">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/MMainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.642858" vertical-offset="0" max-vertical-offset="506">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1232">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipImageBorderView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1025" max-vertical-offset="1914">
-          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+        <state vertical-scroll-proportion="-9.428572" vertical-offset="924" max-vertical-offset="1430">
+          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+          <folding>
+            <element signature="e#564#585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="827" max-vertical-offset="1386">
+          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+          <folding>
+            <element signature="e#1303#1321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipImageLayout.java">
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/BaseDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5556" max-vertical-offset="20856">
+          <caret line="313" column="5" selection-start-line="313" selection-start-column="5" selection-end-line="313" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/android/apptools/OrmLiteSqliteOpenHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5094" max-vertical-offset="6754">
+          <caret line="264" column="19" selection-start-line="264" selection-start-column="19" selection-end-line="264" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/Where.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="14488" max-vertical-offset="15026">
+          <caret line="701" column="0" selection-start-line="701" selection-start-column="0" selection-end-line="701" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/dao/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3312" max-vertical-offset="17490">
+          <caret line="179" column="31" selection-start-line="179" selection-start-column="11" selection-end-line="179" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/stmt/QueryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1816" max-vertical-offset="17512">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <element signature="e#3571#3572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/entity/MContact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1408">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/j256/ormlite/table/TableUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="562" max-vertical-offset="11264">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClipImage/src/main/java/com/moon/sdk/clipimage/ClipZoomImageView.java">
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/core/MOrmliteHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26774848" vertical-offset="7722" max-vertical-offset="10142">
-          <caret line="384" column="0" selection-start-line="384" selection-start-column="0" selection-end-line="390" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="321" max-vertical-offset="1144">
+          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/entity/MApkInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1276">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/core/abst/MBaseOrmliteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="1386">
+          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/MDaoContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/core/itf/MIDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37525356" vertical-offset="13" max-vertical-offset="836">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/dao/MDaoApkInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrmliteDatabase/src/main/java/com/moon/sdk/ormlite/core/abst/MDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.1237323" vertical-offset="1584" max-vertical-offset="4180">
+          <caret line="142" column="19" selection-start-line="142" selection-start-column="19" selection-end-line="142" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/model/ormlite/MOrmliteActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.6465516" vertical-offset="0" max-vertical-offset="2618">
+          <caret line="98" column="11" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2857#2873#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,17 +2,17 @@
 <pre-dex-items>
 
     <item
-        dex="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-8e1ad03fa6e9ed9f9ca701ba35c89fb87139ff57.jar"
-        jar="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
-    <item
         dex="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-a586ccebdcc0443e3c9525bf2d781816616e51fa.jar"
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="08ad5cd2971bbdb3dbf5911ebd5175e3f22e26a6"/>
+    <item
+        dex="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-8e1ad03fa6e9ed9f9ca701ba35c89fb87139ff57.jar"
+        jar="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
     <item
         dex="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-9cb719692bb3bc2e9cbc66b6a547efae3634e0cb.jar"
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
@@ -36,7 +36,7 @@
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\ClipImage\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="4cbe574dc992745456ba7d4efb9722de60934c20"/>
+        sha1="1569f6b2d33e28dc31b5ead57225a83c224aa08d"/>
     <item
         dex="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-d7614bf03b5ef736f559dc36798a23d1d4d0d730.jar"
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\GestureImageView\unspecified\classes.jar"
@@ -50,6 +50,12 @@
         revision="20.0.0"
         sha1="f69a45ad8095c798970837ed61d7fb8b0b4e6ebe"/>
     <item
+        dex="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-f69dc1aa1b901e622bb69711d5fbe03fab9e9e51.jar"
+        jar="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\OrmliteDatabase\unspecified\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b0424676a8416a81039691c533fb4c9fae9c9487"/>
+    <item
         dex="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\pre-dexed\debug\Android_Location_V1.3.0-68ed8d061221f8056bddde6cd9a254bb2078d165.jar"
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\libs\Android_Location_V1.3.0.jar"
         jumboMode="false"
@@ -60,13 +66,13 @@
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\IMageLoader\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="1b658669beadfc841800b9d193a814798f940955"/>
+        sha1="99f626372e1a9cc2d66655e3815a742ddc406d38"/>
     <item
         dex="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-064a328f0ae2748677ec17430e0d9d84f556e630.jar"
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\exploded-aar\MoonSDK\LoopViewPager\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="e6d99d3912c7f713af9ea80ae04a961951030d76"/>
+        sha1="c558ae257754915ac4b59ebe5d3074e61035fe5a"/>
     <item
         dex="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\pre-dexed\debug\classes-21a7e0f0d8e56ad626e49a588a948459798e6a2c.jar"
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\classes.jar"

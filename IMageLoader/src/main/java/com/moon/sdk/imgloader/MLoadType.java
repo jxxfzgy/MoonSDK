@@ -3,7 +3,7 @@ package com.moon.sdk.imgloader;
 /**
  * Created by moon on 2014/10/12 0012.
  */
-public enum LoadType {
+public enum MLoadType {
     /*网络加载*/
     LOADING_NET ,
     /*本地加载图片*/

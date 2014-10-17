@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import com.moon.sdk.imgloader.abst.MAImageLoader;
 import com.moon.sdk.imgloader.intf.MIImageLoader;
 import com.moon.sdk.imgloader.listerner.MILoadingLister;
-import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingProgressListener;
@@ -38,8 +37,8 @@ public class MImageLoaderImpl extends MAImageLoader implements MIImageLoader {
     }
 
     @Override
-    public void loadNormalImage(String url, ImageView imageView, LoadType loadType) {
-        loadNormalImage(getLoadType(url,loadType),imageView) ;
+    public void loadNormalImage(String url, ImageView imageView, MLoadType MLoadType) {
+        loadNormalImage(getLoadType(url, MLoadType),imageView) ;
     }
 
     @Override
@@ -73,8 +72,8 @@ public class MImageLoaderImpl extends MAImageLoader implements MIImageLoader {
     }
 
     @Override
-    public void loadNormalImage(String url, ImageView imageView, MILoadingLister miLoadingLister, LoadType loadType) {
-        loadNormalImage(getLoadType(url, loadType),imageView,miLoadingLister);
+    public void loadNormalImage(String url, ImageView imageView, MILoadingLister miLoadingLister, MLoadType MLoadType) {
+        loadNormalImage(getLoadType(url, MLoadType),imageView,miLoadingLister);
     }
 
     @Override
@@ -113,13 +112,13 @@ public class MImageLoaderImpl extends MAImageLoader implements MIImageLoader {
     }
 
     @Override
-    public void loadCircleImage(String url, ImageView imageView, LoadType loadType) {
-        loadCircleImage(getLoadType(url, loadType),imageView);
+    public void loadCircleImage(String url, ImageView imageView, MLoadType MLoadType) {
+        loadCircleImage(getLoadType(url, MLoadType),imageView);
     }
 
     @Override
-    public void loadCircleImage(String url, ImageView imageView, MILoadingLister miLoadingLister, LoadType loadType) {
-        loadCircleImage(getLoadType(url, loadType),imageView,miLoadingLister);
+    public void loadCircleImage(String url, ImageView imageView, MILoadingLister miLoadingLister, MLoadType MLoadType) {
+        loadCircleImage(getLoadType(url, MLoadType),imageView,miLoadingLister);
     }
 
     @Override
@@ -145,13 +144,13 @@ public class MImageLoaderImpl extends MAImageLoader implements MIImageLoader {
     }
 
     @Override
-    public void loadImage(String url, ImageView imageView, int angle, LoadType loadType) {
-        loadImage(getLoadType(url, loadType),imageView,angle);
+    public void loadImage(String url, ImageView imageView, int angle, MLoadType MLoadType) {
+        loadImage(getLoadType(url, MLoadType),imageView,angle);
     }
 
     @Override
-    public void loadImage(String url, ImageView imageView, int angle, MILoadingLister miLoadingLister, LoadType loadType) {
-        loadImage(getLoadType(url, loadType),imageView,angle,miLoadingLister);
+    public void loadImage(String url, ImageView imageView, int angle, MILoadingLister miLoadingLister, MLoadType MLoadType) {
+        loadImage(getLoadType(url, MLoadType),imageView,angle,miLoadingLister);
     }
 
     @Override

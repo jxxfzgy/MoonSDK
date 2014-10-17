@@ -11,7 +11,7 @@ import java.util.List;
 
 import sdk.moon.com.moonsdk.R;
 import sdk.moon.com.moonsdk.abst.MBaseActivity;
-import sdk.moon.com.moonsdk.adapter.MLoopMaxAdapter;
+import sdk.moon.com.moonsdk.adapter.MBaseLoopMaxAdapter;
 import sdk.moon.com.moonsdk.entity.MLoopViewBean;
 
 /**
@@ -20,7 +20,7 @@ import sdk.moon.com.moonsdk.entity.MLoopViewBean;
  */
 public class MLoopViewActivity extends MBaseActivity {
     private LoopViewPager mLoopViewPager ;
-    private MLoopMaxAdapter mLoopMaxAdapter ;
+    private MBaseLoopMaxAdapter mLoopMaxAdapter ;
     private List<MLoopViewBean> loopViewBeans ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class MLoopViewActivity extends MBaseActivity {
 
     @Override
     public void initView() {
-        mLoopMaxAdapter = new MLoopMaxAdapter(gContext,loopViewBeans) ;
+        mLoopMaxAdapter = new MBaseLoopMaxAdapter(gContext,loopViewBeans) ;
         mLoopViewPager = findView(R.id.loopViewPager) ;
 
         mLoopViewPager.setAdapter(mLoopMaxAdapter);

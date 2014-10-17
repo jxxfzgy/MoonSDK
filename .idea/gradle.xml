@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/GestureImageView" />
             <option value="$PROJECT_DIR$/IMageLoader" />
             <option value="$PROJECT_DIR$/LoopViewPager" />
+            <option value="$PROJECT_DIR$/OrmliteDatabase" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

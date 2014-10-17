@@ -10,12 +10,12 @@ import java.util.List;
 /**
  * Created by moon.zhong on 2014/10/15.
  */
-public abstract class MLoopAdapter<T> extends android.support.v4.view.PagerAdapter {
+public abstract class MBaseLoopAdapter<T> extends android.support.v4.view.PagerAdapter {
     private List<T> tList ;
     private static final int MAX_SIZE = 20;
     private LayoutInflater inflater ;
 
-    protected MLoopAdapter(Context context ,List<T> tList) {
+    protected MBaseLoopAdapter(Context context, List<T> tList) {
         inflater = LayoutInflater.from(context) ;
         this.tList = tList;
     }

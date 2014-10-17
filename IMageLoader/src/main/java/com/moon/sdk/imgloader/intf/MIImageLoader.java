@@ -2,7 +2,7 @@ package com.moon.sdk.imgloader.intf;
 
 import android.widget.ImageView;
 
-import com.moon.sdk.imgloader.LoadType;
+import com.moon.sdk.imgloader.MLoadType;
 import com.moon.sdk.imgloader.listerner.MILoadingLister;
 
 import java.io.File;
@@ -31,9 +31,9 @@ public interface MIImageLoader {
      * 加载普通图片，增加选择从哪个地方加载的参数
      * @param url
      * @param imageView
-     * @param loadType
+     * @param MLoadType
      */
-    public void loadNormalImage(String url, ImageView imageView,LoadType loadType);
+    public void loadNormalImage(String url, ImageView imageView,MLoadType MLoadType);
 
     /**
      * 加载普通图片，带回调
@@ -50,9 +50,9 @@ public interface MIImageLoader {
      * @param imageView
      * @param url
      * @param miLoadingLister
-     * @param loadType
+     * @param MLoadType
      */
-    public void loadNormalImage(String url, ImageView imageView ,MILoadingLister miLoadingLister,LoadType loadType);
+    public void loadNormalImage(String url, ImageView imageView ,MILoadingLister miLoadingLister,MLoadType MLoadType);
 
     /**
      * 加载圆形图片
@@ -74,18 +74,18 @@ public interface MIImageLoader {
      * 加载圆形图片,增加选择从哪个地方加载的参数
      * @param url
      * @param imageView
-     *@param loadType
+     *@param MLoadType
      */
-    public void loadCircleImage(String url, ImageView imageView,LoadType loadType);
+    public void loadCircleImage(String url, ImageView imageView,MLoadType MLoadType);
 
     /**
      * 加载圆形图片，带回调,增加选择从哪个地方加载的参数
      * @param url
      * @param imageView
      * @param miLoadingLister
-     * @param loadType
+     * @param MLoadType
      */
-    public void loadCircleImage(String url, ImageView imageView ,MILoadingLister miLoadingLister,LoadType loadType);
+    public void loadCircleImage(String url, ImageView imageView ,MILoadingLister miLoadingLister,MLoadType MLoadType);
 
     /**
      * 加载网络图片，带角度参数
@@ -109,9 +109,9 @@ public interface MIImageLoader {
      * @param url
      * @param imageView
      * @param angle
-     * @param loadType
+     * @param MLoadType
      */
-    public void loadImage(String url, ImageView imageView ,int angle ,LoadType loadType);
+    public void loadImage(String url, ImageView imageView ,int angle ,MLoadType MLoadType);
 
     /**
      * 加载网络图片，带角度参数，带回调,增加选择从哪个地方加载的参数
@@ -119,9 +119,9 @@ public interface MIImageLoader {
      * @param imageView
      * @param angle
      * @param miLoadingLister
-     * @param loadType
+     * @param MLoadType
      */
-    public void loadImage(String url, ImageView imageView ,int angle ,MILoadingLister miLoadingLister ,LoadType loadType);
+    public void loadImage(String url, ImageView imageView ,int angle ,MILoadingLister miLoadingLister ,MLoadType MLoadType);
 
 
     /**

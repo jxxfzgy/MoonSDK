@@ -1,1 +1,1 @@
-include ':app', ':AMap', ':IMageLoader', ':GestureImageView', ':ClipImage', ':LoopViewPager'
+include ':app', ':AMap', ':IMageLoader', ':GestureImageView', ':ClipImage', ':LoopViewPager', ':OrmliteDatabase'

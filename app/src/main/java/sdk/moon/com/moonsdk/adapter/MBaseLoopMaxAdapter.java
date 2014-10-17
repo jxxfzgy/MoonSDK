@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.moon.sdk.loopviewpager.loop1.MBaseLoopAdapter;
+
 import java.util.List;
 
 import sdk.moon.com.moonsdk.R;
@@ -13,9 +15,9 @@ import sdk.moon.com.moonsdk.entity.MLoopViewBean;
 /**
  * Created by moon.zhong on 2014/10/15.
  */
-public class MLoopMaxAdapter extends com.moon.sdk.loopviewpager.loop1.MLoopAdapter<MLoopViewBean> {
+public class MBaseLoopMaxAdapter extends MBaseLoopAdapter<MLoopViewBean> {
 
-    public MLoopMaxAdapter(Context context, List<MLoopViewBean> mLoopViewBeans) {
+    public MBaseLoopMaxAdapter(Context context, List<MLoopViewBean> mLoopViewBeans) {
         super(context, mLoopViewBeans);
     }
 

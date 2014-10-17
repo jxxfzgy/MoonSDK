@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/IMageLoader/IMageLoader.iml" filepath="$PROJECT_DIR$/IMageLoader/IMageLoader.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoopViewPager/LoopViewPager.iml" filepath="$PROJECT_DIR$/LoopViewPager/LoopViewPager.iml" />
       <module fileurl="file://$PROJECT_DIR$/MoonSDK.iml" filepath="$PROJECT_DIR$/MoonSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OrmliteDatabase/OrmliteDatabase.iml" filepath="$PROJECT_DIR$/OrmliteDatabase/OrmliteDatabase.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

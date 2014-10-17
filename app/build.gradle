@@ -27,4 +27,5 @@ dependencies {
     compile project(':GestureImageView')
     compile project(':ClipImage')
     compile project(':LoopViewPager')
+    compile project(':OrmliteDatabase')
 }

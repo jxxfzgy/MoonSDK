@@ -48,5 +48,12 @@
         android:text="buttonLoopView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@id/buttonLoopView"
+        android:id="@+id/buttonOrmlite"
+        android:onClick="testOrmlite"
+        android:text="buttonOrmlite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

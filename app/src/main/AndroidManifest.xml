@@ -49,6 +49,9 @@
         <activity
             android:name=".model.loopviewpager.MLoopViewActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.ormlite.MOrmliteActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
