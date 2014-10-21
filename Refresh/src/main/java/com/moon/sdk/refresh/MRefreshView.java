@@ -5,8 +5,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.drawable.AnimationDrawable;
 import android.util.AttributeSet;
-import android.util.DisplayMetrics;
-import android.util.TypedValue;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.MotionEvent;
@@ -24,90 +23,110 @@ import android.widget.TextView;
  * create by moon
  */
 public class MRefreshView extends ViewGroup implements OnGestureListener {
-    private View refreshView;
-    private View refreshContent;
+    /*刷新的头部*/
+    private View refreshHead;
+    /*当数据为空时，显示空界面*/
+    private View emptyView;
+    /*下拉刷新控件的内部控件*/
     private View childView;
     private View showView;
-    private ImageView loadingView;
-    private TextView textView;
-    private Scroller scroller;
+    /*加载过程中，显示的动画效果*/
+    private ImageView animationView;
+    /*字体提示信息，下来可以刷新，松开可以刷新，正在刷新。。*/
+    private TextView textTips;
+    /*view滚动，需要用到*/
+    private Scroller mScroller;
+    /*手势识别需要用到*/
     private GestureDetector mGesture;
-    private int data_1000 = 1000;
-    private int data_500 = 500;
-    private float yDown;
+    /*第一次布局次控件，让刷新view先隐藏起来，
+    * 滚动到上面
+    * */
+    private boolean isFirst = true;
+    private float downPointY;
     private int data_5 = 0;
-    private boolean isShow = true;
-    private int pull_refresh_statue = NONE_PULL_REFRESH;
-    private final static int NONE_PULL_REFRESH = 0;   //正常状态
-    private final static int ENTER_PULL_REFRESH = 1;  //进入下拉刷新状态
-    private final static int OVER_PULL_REFRESH = 2;   //进入松手刷新状态
-    private final static int EXIT_PULL_REFRESH = 3;     //松手后反弹后加载状态
+    /*刷新view当前的状态*/
+    private MRefreshStatue refreshStatue;
+    /*刷新监听操作，当达到下拉刷新的条件时，触发*/
     private OnRefreshLister mOnRefreshLister;
+    /*上下文*/
     private Context mContext;
+    /*listView控件的父类*/
     private AdapterView<?> mAdapterView;
+    /*垂直滚动控件*/
     private ScrollView mScrollView;
 
-    private int upDown = 0;
-    private final static int UP_TYPE = 0;   //正常状态
-    private final static int DOWN_TYPE = 1;  //进入下拉刷新状态
     private boolean showEmpty = false;
-
-    //当正在刷新时，可以上滑隐藏，下滑再次出现。
-    private boolean canHide = true;
 
     public MRefreshView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.refreshView = ((Activity) context).getLayoutInflater().inflate(
-                R.layout.refresh_head, null);
-        this.refreshContent = ((Activity) context).getLayoutInflater().inflate(
-                R.layout.refresh_content, null);
-        addView(this.refreshView);
-        this.loadingView = ((ImageView) findViewById(R.id.progress));
-        this.textView = ((TextView) findViewById(R.id.text));
-        this.scroller = new Scroller(context);
-        this.mGesture = new GestureDetector(this);
         this.mContext = context;
-        DisplayMetrics dm = getResources().getDisplayMetrics();
-        data_5 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, data_5, dm);
+        initView();
+        initData();
         initContentAdapterView();
     }
 
+    /**
+     * 实例化对象
+     */
+    private void initData() {
+        this.mScroller = new Scroller(mContext);
+        this.mGesture = new GestureDetector(this);
+    }
+
+    /**
+     * 初始化控件
+     */
+    private void initView() {
+        this.refreshHead = ((Activity) mContext).getLayoutInflater().inflate(R.layout.refresh_head, null);
+        this.emptyView = ((Activity) mContext).getLayoutInflater().inflate(R.layout.refresh_content, null);
+        this.animationView = ((ImageView) refreshHead.findViewById(R.id.progress));
+        this.textTips = ((TextView) refreshHead.findViewById(R.id.text));
+        addView(this.refreshHead);
+    }
+
+    /**
+     * 设置动画开关
+     *
+     * @param enable
+     */
     private void setAnimation(boolean enable) {
         if (enable) {
-            this.loadingView.setVisibility(View.VISIBLE);
-            ((AnimationDrawable) this.loadingView.getDrawable()).start();
+            this.animationView.setVisibility(View.VISIBLE);
+            ((AnimationDrawable) this.animationView.getDrawable()).start();
         } else {
-            ((AnimationDrawable) this.loadingView.getDrawable()).stop();
-            this.loadingView.setVisibility(View.INVISIBLE);
+            ((AnimationDrawable) this.animationView.getDrawable()).stop();
+            this.animationView.setVisibility(View.INVISIBLE);
         }
 
     }
 
-    public final void setCanHide(boolean canHide) {
-        this.canHide = canHide;
-    }
-
+    /**
+     * 滚动刷新控件
+     */
     private void scrollInvalidate() {
         int scrollY = getScrollY();
-        if (this.pull_refresh_statue == OVER_PULL_REFRESH) {
-            this.pull_refresh_statue = EXIT_PULL_REFRESH;
-            int refreshHeight = this.loadingView.getTop() - scrollY;
-            int duration = (int) (this.data_1000 * Math.abs(refreshHeight) / this.refreshView
-                    .getHeight());
-            this.scroller.startScroll(0, scrollY, 0, refreshHeight, duration);
-            invalidate();
-            setAnimation(true);
-            if (this.mOnRefreshLister != null)
-                this.mOnRefreshLister.refresh();
-            this.textView.setText("");
-        } else if (pull_refresh_statue == NONE_PULL_REFRESH || this.pull_refresh_statue == ENTER_PULL_REFRESH) {
-            int stopHeight = this.refreshView.getHeight() - scrollY;
-            this.scroller.startScroll(0, scrollY, 0, stopHeight, this.data_500);
-            invalidate();
-            pull_refresh_statue = NONE_PULL_REFRESH;
-            setAnimation(false);
+        switch (refreshStatue) {
+            case REFRESH_PREPARE:
+                refreshStatue = MRefreshStatue.REFRESH_ING;
+                int refreshHeight = this.animationView.getTop() - scrollY;
+                int duration = (1000 * Math.abs(refreshHeight) / this.refreshHead.getHeight());
+                this.mScroller.startScroll(0, scrollY, 0, refreshHeight, duration);
+                invalidate();
+                setAnimation(true);
+                if (this.mOnRefreshLister != null)
+                    this.mOnRefreshLister.refresh();
+                this.textTips.setText("");
+                break;
+            case REFRESH_NORMAL:
+            case REFRESH_END:
+            case REFRESH_ING:
+                int stopHeight = this.refreshHead.getHeight() - scrollY;
+                this.mScroller.startScroll(0, scrollY, 0, stopHeight, 500);
+                invalidate();
+                refreshStatue = MRefreshStatue.REFRESH_NORMAL;
+                setAnimation(false);
+                break;
         }
-
     }
 
     //根据自己的控件来定义高度
@@ -134,11 +153,7 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
                 hideEmptyView();
             }
         }
-
-        if (this.pull_refresh_statue == EXIT_PULL_REFRESH) {
-            this.pull_refresh_statue = NONE_PULL_REFRESH;
-            scrollInvalidate();
-        }
+        scrollInvalidate();
     }
 
     public final void setShowView(View showView) {
@@ -155,19 +170,19 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
         if (!showEmpty) {
             showEmpty = true;
             removeView(showView);
-            removeView(refreshContent);
-            addView(this.refreshContent);
+            removeView(emptyView);
+            addView(this.emptyView);
         }
     }
 
     public final void hideEmptyView() {
-        /* 瀑布流筛选时，无数据，再清除条件，不显示。所以要去掉,if (this.pull_refresh_statue == EXIT_PULL_REFRESH)，去掉暂时没发现什么bug,错了，发现了以下bug*/
+        /* 瀑布流筛选时，无数据，再清除条件，不显示。所以要去掉,，去掉暂时没发现什么bug,错了，发现了以下bug*/
         /*加载下一页的时候，向上拖动再向下滑动会出现下拉刷新*/
         /*加入showEmpty 就是为了反之上面出现的那种情况*/
-//        if (this.pull_refresh_statue == EXIT_PULL_REFRESH) {
+//        == EXIT_PULL_REFRESH) {
         if (showEmpty) {
             showEmpty = false;
-            removeView(refreshContent);
+            removeView(emptyView);
             removeView(showView);
             addView(showView);
         }
@@ -184,32 +199,37 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
         super.addView(view, index, layoutParams);
     }
 
+    /**
+     * 手动刷新，由外部调用
+     */
     public final void startRefresh() {
         if (mAdapterView != null) {
             mAdapterView.setSelection(0);
         }
-        scrollTo(0, this.loadingView.getTop() - (int) (0.5F + 15.0F * getResources().getDisplayMetrics().density));
-        this.pull_refresh_statue = OVER_PULL_REFRESH;
+        scrollTo(0, this.animationView.getTop() - (int) (0.5F + 15.0F * getResources().getDisplayMetrics().density));
+        this.refreshStatue = MRefreshStatue.REFRESH_PREPARE;
         scrollInvalidate();
     }
 
     public void computeScroll() {
-        if (this.scroller.computeScrollOffset()) {
-            scrollTo(0, this.scroller.getCurrY());
+        if (this.mScroller.computeScrollOffset()) {
+            scrollTo(0, this.mScroller.getCurrY());
             invalidate();
         }
     }
 
+    /**
+     * 获取需要刷新的内部控件
+     */
     private void initContentAdapterView() {
         int count = getChildCount();
-        View view = null;
-        for (int i = 0; i < count - 1; ++i) {
+        View view;
+        for (int i = 0; i < count; i++) {
             view = getChildAt(i);
             if (view instanceof AdapterView<?>) {
                 mAdapterView = (AdapterView<?>) view;
             }
             if (view instanceof ScrollView) {
-                // finish later
                 mScrollView = (ScrollView) view;
             }
         }
@@ -236,13 +256,6 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
     }
 
     private boolean isRefreshViewScroll(int deltaY) {
-        if (pull_refresh_statue == EXIT_PULL_REFRESH) {
-            if (!this.canHide)
-                return false;
-            else {
-                return true;
-            }
-        }
         //对于ListView和GridView
         if (mAdapterView != null) {
             // 子view(ListView or GridView)滑动到最顶端
@@ -257,14 +270,13 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
                     return true;
                 }
                 int top = child.getTop();
-//                TLog.d("==========top===============" + top);
                 int padding = mAdapterView.getPaddingTop();
                 if (mAdapterView.getFirstVisiblePosition() == 0
                         && Math.abs(top - padding) == data_5) {//这里之前用3可以判断,但现在不行,还没找到原因
-                    if (pull_refresh_statue == EXIT_PULL_REFRESH) {
+                    if (refreshStatue == MRefreshStatue.REFRESH_ING) {
                         int loadingTop = getScrollY();
-                        int loadingHeight = this.loadingView.getHeight();
-                        int refreshHeight = this.refreshView.getHeight();
+                        int loadingHeight = this.animationView.getHeight();
+                        int refreshHeight = this.refreshHead.getHeight();
                         if (loadingTop > refreshHeight - loadingHeight)
                             return true;
                         else
@@ -273,37 +285,11 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
                     return true;
                 }
 
-            } else if (deltaY < 0) {
-                if (pull_refresh_statue == EXIT_PULL_REFRESH) {
-                    int loadingTop = getScrollY();
-                    int refreshHeight = this.refreshView.getHeight();
-                    if (loadingTop < refreshHeight)
-                        return true;
-                    else
-                        return false;
-                }
-                View lastChild = mAdapterView.getChildAt(mAdapterView
-                        .getChildCount() - 1);
-                if (lastChild == null) {
-                    // 如果mAdapterView中没有数据,不拦截
-                    return false;
-                }
-                // 最后一个子view的Bottom小于父View的高度说明mAdapterView的数据没有填满父view,
-                // 等于父View的高度说明mAdapterView已经滑动到最后
-                if (lastChild.getBottom() <= getHeight()
-                        && mAdapterView.getLastVisiblePosition() == mAdapterView
-                        .getCount() - 1) {
-                    return false;
-                }
-                return false;
             }
-        }
-        // 对于ScrollView
-        else if (mScrollView != null) {
+        }else if (mScrollView != null) {
             // 子scroll view滑动到最顶端
             View child = mScrollView.getChildAt(0);
             if (deltaY > 0 && mScrollView.getScrollY() == 0) {
-
                 return true;
             } else if (deltaY < 0
                     && child.getMeasuredHeight() <= getHeight()
@@ -315,47 +301,37 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
     }
 
     public boolean onInterceptTouchEvent(MotionEvent event) {
-        float y = event.getRawY();
-
+        float rawY = event.getRawY();
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                yDown = y;
+                downPointY = rawY;
                 break;
             case MotionEvent.ACTION_UP:
                 break;
             case MotionEvent.ACTION_MOVE:
-                int deltaY = (int) (y - yDown);
-                if (deltaY > 0) {
-                    upDown = UP_TYPE;
-                }
-                if (deltaY < 0) {
-                    upDown = DOWN_TYPE;
-                }
-                if (isRefreshViewScroll(deltaY)) {
-                    event.setAction(0);
+                if (isRefreshViewScroll((int) (rawY - downPointY))) {
+                    event.setAction(MotionEvent.ACTION_DOWN);
                     onTouchEvent(event);
-                    ((ViewGroup) getParent()).requestDisallowInterceptTouchEvent(true);
+                    getParent().requestDisallowInterceptTouchEvent(true);
                     return true;
                 }
-
                 break;
         }
-
         return false;
     }
 
     protected void onLayout(boolean changed, int l, int t,
                             int r, int b) {
-        View mView = this.refreshView;
-        int view_width = this.refreshView.getMeasuredWidth();
-        int view_height = this.refreshView.getMeasuredHeight();
-        mView.layout(0, 0, view_width, view_height);
-
-        this.childView.layout(0, view_height, this.childView.getMeasuredWidth(), view_height
+        View mView = this.refreshHead;
+        int viewWidth = this.refreshHead.getMeasuredWidth();
+        int viewHeight = this.refreshHead.getMeasuredHeight();
+        mView.layout(0, 0, viewWidth, viewHeight);
+        this.childView.layout(0, viewHeight, this.childView.getMeasuredWidth(), viewHeight
                 + this.childView.getMeasuredHeight());
-        if (this.isShow) {
-            scrollTo(0, this.refreshView.getHeight());
-            this.isShow = false;
+        if (this.isFirst) {
+            refreshStatue = MRefreshStatue.REFRESH_NORMAL;
+            scrollTo(0, this.refreshHead.getHeight());
+            this.isFirst = false;
         }
     }
 
@@ -363,35 +339,33 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
     }
 
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        int i1 = MeasureSpec.getSize(widthMeasureSpec);
-        int i2 = MeasureSpec.getSize(heightMeasureSpec);
-        this.refreshView.measure(widthMeasureSpec, heightMeasureSpec);
-        this.refreshContent.measure(widthMeasureSpec, heightMeasureSpec);
+        int width = MeasureSpec.getSize(widthMeasureSpec);
+        int height = MeasureSpec.getSize(heightMeasureSpec);
+        this.refreshHead.measure(widthMeasureSpec, heightMeasureSpec);
+        this.emptyView.measure(widthMeasureSpec, heightMeasureSpec);
         this.childView.measure(widthMeasureSpec,
-                MeasureSpec.makeMeasureSpec(i2, MeasureSpec.EXACTLY));
-        setMeasuredDimension(i1, i2);
+                MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY));
+        setMeasuredDimension(width, height);
     }
 
     public boolean onScroll(MotionEvent motionEvent1, MotionEvent motionEvent2,
                             float distanceX, float distanceY) {
         float y_dis;
-        y_dis = distanceY * (float) (0.6D * (getScrollY() * 1.0f / this.refreshView.getHeight()));
-        if (y_dis + getScrollY() >= this.refreshView.getHeight())
-            y_dis = this.refreshView.getHeight() - getScrollY();
+        y_dis = distanceY * (float) (0.7D * (getScrollY() * 1.0f / this.refreshHead.getHeight()));
+        if (y_dis + getScrollY() >= this.refreshHead.getHeight())
+            y_dis = this.refreshHead.getHeight() - getScrollY();
         scrollBy(0, (int) y_dis);
-        int loadingTop = this.loadingView.getTop();
-        if ((getScrollY() > loadingTop) && (this.pull_refresh_statue == OVER_PULL_REFRESH)) {
-            this.pull_refresh_statue = ENTER_PULL_REFRESH;
-            this.textView.setText("下拉可以刷新");
+        int loadingTop = this.animationView.getTop();
+        if ((getScrollY() > loadingTop) && (this.refreshStatue == MRefreshStatue.REFRESH_PREPARE)) {
+            this.refreshStatue = MRefreshStatue.REFRESH_NORMAL;
+            this.textTips.setText("下拉可以刷新");
         }
-
-        if ((getScrollY() < loadingTop) && (this.pull_refresh_statue == ENTER_PULL_REFRESH)) {
-            this.pull_refresh_statue = OVER_PULL_REFRESH;
-            this.textView.setText("松开可以刷新");
+        if ((getScrollY() < loadingTop) && (this.refreshStatue == MRefreshStatue.REFRESH_NORMAL)) {
+            this.refreshStatue = MRefreshStatue.REFRESH_PREPARE;
+            this.textTips.setText("松开可以刷新");
         }
-        if (this.pull_refresh_statue == NONE_PULL_REFRESH) {
-            this.pull_refresh_statue = ENTER_PULL_REFRESH;
-            this.textView.setText("下拉可以刷新");
+        if (this.refreshStatue == MRefreshStatue.REFRESH_NORMAL) {
+            this.textTips.setText("下拉可以刷新");
         }
 
         return true;
@@ -405,20 +379,17 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
     }
 
     public boolean onTouchEvent(MotionEvent motionEvent) {
-        if (pull_refresh_statue == EXIT_PULL_REFRESH) {
-            if (this.canHide)
-                return true;
-
-        }
-        int i1 = 1;
-        if ((motionEvent.getAction() == i1)
-                || (motionEvent.getAction() == 3)) {
+        if ((motionEvent.getAction() == MotionEvent.ACTION_UP)
+                || (motionEvent.getAction() == MotionEvent.ACTION_CANCEL)) {
             scrollInvalidate();
             return true;
         }
         return this.mGesture.onTouchEvent(motionEvent);
     }
 
+    /**
+     * 刷新触发接口
+     */
     public static abstract interface OnRefreshLister {
         public abstract void refresh();
     }
