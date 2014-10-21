@@ -19,9 +19,12 @@ import sdk.moon.com.moonsdk.entity.MActivityBean;
  */
 public class MActivityAdapter extends MBExpandAdapter<MActivityBean, MActivityAdapter.ViewHolder> {
 
+    /*itme选择回调接口*/
     private OnItemSelect OnItemSelect;
-
+    /*上一次选择的view*/
     private View lastTextView;
+    /*上一次选择的 item */
+    private int lastPosition = -1, lastItem = -1 ;
 
     public MActivityAdapter(List dataList) {
         super(MApplication.getContext(), dataList);
@@ -48,10 +51,11 @@ public class MActivityAdapter extends MBExpandAdapter<MActivityBean, MActivityAd
             int lineNum = (length + 2) / 3;
             LinearLayout expandLinearLayout = findView(view, R.id.expandContext);
             for (int i = 0; i < lineNum; i++) {
-                final int itemNum = i;
+
                 LinearLayout linearLayout = getLineLinerLayout();
                 expandLinearLayout.addView(linearLayout);
                 if (i * 3 < length) {
+                    final int itemNum = i * 3 ;
                     TextView textView1 = getItemTextView(false);
                     linearLayout.addView(textView1);
                     textViews.add(textView1);
@@ -67,6 +71,8 @@ public class MActivityAdapter extends MBExpandAdapter<MActivityBean, MActivityAd
                             }
                             ((TextView) v).setTextColor(MApplication.getContext().getResources().getColor(R.color.green));
                             v.setBackgroundResource(R.drawable.main_item_selector);
+                            lastPosition = position ;
+                            lastItem = itemNum ;
                             lastTextView = v;
 
                         }
@@ -76,6 +82,7 @@ public class MActivityAdapter extends MBExpandAdapter<MActivityBean, MActivityAd
                     linearLayout.addView(textView1_1);
                 }
                 if (i * 3 + 1 < length) {
+                    final int itemNum = i * 3 + 1;
                     TextView textView2 = getItemTextView(true);
                     linearLayout.addView(textView2);
                     textViews.add(textView2);
@@ -91,6 +98,8 @@ public class MActivityAdapter extends MBExpandAdapter<MActivityBean, MActivityAd
                             }
                             ((TextView) v).setTextColor(MApplication.getContext().getResources().getColor(R.color.green));
                             v.setBackgroundResource(R.drawable.main_item_selector);
+                            lastPosition = position ;
+                            lastItem = itemNum ;
                             lastTextView = v;
                         }
                     });
@@ -99,6 +108,7 @@ public class MActivityAdapter extends MBExpandAdapter<MActivityBean, MActivityAd
                     linearLayout.addView(textView2_2);
                 }
                 if (i * 3 + 2 < length) {
+                    final int itemNum = i * 3 + 2;
                     TextView textView3 = getItemTextView(true);
                     linearLayout.addView(textView3);
                     textViews.add(textView3);
@@ -114,6 +124,8 @@ public class MActivityAdapter extends MBExpandAdapter<MActivityBean, MActivityAd
                             }
                             ((TextView) v).setTextColor(MApplication.getContext().getResources().getColor(R.color.green));
                             v.setBackgroundResource(R.drawable.main_item_selector);
+                            lastPosition = position ;
+                            lastItem = itemNum ;
                             lastTextView = v;
                         }
                     });
@@ -138,6 +150,11 @@ public class MActivityAdapter extends MBExpandAdapter<MActivityBean, MActivityAd
             int length = activityBeanList.size();
             for (int i = 0; i < length; i++) {
                 viewHolder.textViewList.get(i).setText(activityBeanList.get(i).getFunctionName());
+                if(position == lastPosition){
+                    viewHolder.textViewList.get(lastItem).setTextColor(MApplication.getContext().getResources().getColor(R.color.green));
+                    viewHolder.textViewList.get(lastItem).setBackgroundResource(R.drawable.main_item_selector);
+                    lastTextView = viewHolder.textViewList.get(lastItem) ;
+                }
             }
         }
     }
