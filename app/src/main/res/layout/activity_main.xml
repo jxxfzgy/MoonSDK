@@ -2,58 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:layout_gravity="center_horizontal"
     tools:context=".MMainActivity">
+    <com.moon.sdk.expandablelistview.ActionSlideExpandableListView
+        android:id="@+id/expandListView"
+        android:listSelector="@null"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        </com.moon.sdk.expandablelistview.ActionSlideExpandableListView>
 
-    <TextView
-        android:text="@string/hello_world"
-        android:id="@+id/showMsg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/buttonLocal"
-        android:onClick="test"
-        android:text="buttonLocal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:layout_below="@id/buttonLocal"
-        android:id="@+id/buttonImage"
-        android:onClick="testImage"
-        android:text="buttonImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:layout_below="@id/buttonImage"
-        android:id="@+id/buttonGesture"
-        android:onClick="testGesture"
-        android:text="buttonGesture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:layout_below="@id/buttonGesture"
-        android:id="@+id/buttonClip"
-        android:onClick="testClip"
-        android:text="buttonClip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:layout_below="@id/buttonClip"
-        android:id="@+id/buttonLoopView"
-        android:onClick="testLoopView"
-        android:text="buttonLoopView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:layout_below="@id/buttonLoopView"
-        android:id="@+id/buttonOrmlite"
-        android:onClick="testOrmlite"
-        android:text="buttonOrmlite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </RelativeLayout>

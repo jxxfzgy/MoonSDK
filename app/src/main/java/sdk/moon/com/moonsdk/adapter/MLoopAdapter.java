@@ -1,7 +1,6 @@
 package sdk.moon.com.moonsdk.adapter;
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -23,7 +22,7 @@ public class MLoopAdapter extends MBaseViewAdapter<MLoopViewBean> {
 
     @Override
     public View createView(LayoutInflater inflater) {
-        View view = inflater.inflate(R.layout.item_loop_viewpager, null) ;
+        View view = inflater.inflate(R.layout.viewpager_loop_item, null) ;
         return view;
     }
 

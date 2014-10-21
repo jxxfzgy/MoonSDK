@@ -50,4 +50,8 @@ public abstract class MBaseLoopAdapter<T> extends android.support.v4.view.PagerA
     public abstract View createView(LayoutInflater inflater) ;
 
     public abstract void showData(View view ,int position) ;
+
+    public <K extends View > K findView(View view, int id){
+        return  (K) view.findViewById(id) ;
+    }
 }

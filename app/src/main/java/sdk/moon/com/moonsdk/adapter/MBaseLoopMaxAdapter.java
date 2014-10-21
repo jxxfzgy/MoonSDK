@@ -23,13 +23,13 @@ public class MBaseLoopMaxAdapter extends MBaseLoopAdapter<MLoopViewBean> {
 
     @Override
     public View createView(LayoutInflater inflater) {
-        View view = inflater.inflate(R.layout.item_loop_viewpager, null) ;
+        View view = inflater.inflate(R.layout.viewpager_loop_item, null) ;
         return view;
     }
 
     @Override
     public void showData(View view, int position) {
-        ImageView imageView = (ImageView)view.findViewById(R.id.item_loop_img) ;
+        ImageView imageView = findView(view,R.id.item_loop_img) ;
         imageView.setImageResource(getItem(position).drawableId);
     }
 }

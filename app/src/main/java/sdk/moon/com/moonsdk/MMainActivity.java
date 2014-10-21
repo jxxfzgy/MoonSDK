@@ -2,22 +2,28 @@ package sdk.moon.com.moonsdk;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
 
+import com.moon.sdk.expandablelistview.AbstractSlideExpandableListAdapter;
+import com.moon.sdk.expandablelistview.ActionSlideExpandableListView;
+
+import java.util.List;
+
 import sdk.moon.com.moonsdk.abst.MBaseActivity;
-import sdk.moon.com.moonsdk.model.amap.MLocationActivity;
-import sdk.moon.com.moonsdk.model.clipimage.MClipImageActivity;
-import sdk.moon.com.moonsdk.model.gestureview.MGestureViewActivity;
-import sdk.moon.com.moonsdk.model.imageloader.MImageLoadActivity;
-import sdk.moon.com.moonsdk.model.loopviewpager.MLoopViewActivity;
-import sdk.moon.com.moonsdk.model.ormlite.MOrmliteActivity;
+import sdk.moon.com.moonsdk.adapter.MActivityAdapter;
+import sdk.moon.com.moonsdk.entity.MActivityBean;
 
 
-public class MMainActivity extends MBaseActivity {
+public class MMainActivity extends MBaseActivity implements AbstractSlideExpandableListAdapter.OnItemExpandCollapseListener,MActivityAdapter.OnItemSelect {
 
     //显示消息，提示
     private TextView showMsg ;
+    private List<MActivityBean> mActivityBeanList ;
+    private ActionSlideExpandableListView expandableListView ;
+    private MActivityAdapter activityAdapter ;
+    private Handler handler = new Handler() ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_main);
@@ -26,38 +32,42 @@ public class MMainActivity extends MBaseActivity {
     }
 
     @Override
-    public void initData() {
+    protected void onResume() {
+        super.onResume();
+    }
 
+    @Override
+    public void initData() {
+        mActivityBeanList = MMainHelper.mActivityBeans ;
     }
 
     @Override
     public void initView() {
-        showMsg = findView(R.id.showMsg) ;
+        expandableListView = findView(R.id.expandListView) ;
+        activityAdapter = new MActivityAdapter(mActivityBeanList) ;
+        activityAdapter.setOnItemSelect(this);
+        expandableListView.setAdapter(activityAdapter, R.id.expandItem, R.id.expandContext);
+        expandableListView.setItemExpandCollapseListener(this);
+
     }
 
-    public void test(View view){
-        Intent intent = new Intent(this,MLocationActivity.class) ;
-        startActivity(intent);
-    }
-    public void testImage(View view){
-        Intent intent = new Intent(this,MImageLoadActivity.class) ;
-        startActivity(intent);
-    }
-    public void testGesture(View view){
-        Intent intent = new Intent(this,MGestureViewActivity.class) ;
-        startActivity(intent);
-    }
-    public void testClip(View view){
-        Intent intent = new Intent(this,MClipImageActivity.class) ;
-        startActivity(intent);
-    }
-    public void testLoopView(View view){
-        Intent intent = new Intent(this,MLoopViewActivity.class) ;
-        startActivity(intent);
-    }
-    public void testOrmlite(View view){
-        Intent intent = new Intent(this,MOrmliteActivity.class) ;
-        startActivity(intent);
+
+    @Override
+    public void onExpand(View itemView, int position) {
+        mActivityBeanList.get(position).setExpand(true);
+        activityAdapter.notifyDataSetChanged();
+
     }
 
+    @Override
+    public void onCollapse(View itemView, int position) {
+        mActivityBeanList.get(position).setExpand(false);
+        activityAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void select(int position, int item) {
+        Intent intent = new Intent(this,mActivityBeanList.get(position).getSubBean().get(item).getActivityName()) ;
+        startActivity(intent);
+    }
 }

@@ -86,6 +86,7 @@
     <orderEntry type="module" module-name="IMageLoader" exported="" />
     <orderEntry type="module" module-name="ClipImage" exported="" />
     <orderEntry type="module" module-name="GestureImageView" exported="" />
+    <orderEntry type="module" module-name="ExpandableListView" exported="" />
     <orderEntry type="module" module-name="AMap" exported="" />
     <orderEntry type="module" module-name="OrmliteDatabase" exported="" />
     <orderEntry type="module" module-name="LoopViewPager" exported="" />

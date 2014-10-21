@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "sdk.moon.com.moonsdk"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 20
         versionCode 1
         versionName "1.0"
@@ -28,4 +28,5 @@ dependencies {
     compile project(':ClipImage')
     compile project(':LoopViewPager')
     compile project(':OrmliteDatabase')
+    compile project(':ExpandableListView')
 }
