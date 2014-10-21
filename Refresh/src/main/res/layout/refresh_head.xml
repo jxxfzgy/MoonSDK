@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="130.0dip"
+    android:background="@drawable/refresh_bg" >
+
+    <ImageView
+        android:id="@+id/progress"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_gravity="bottom"
+        android:scaleType="fitXY"
+        android:src="@drawable/loading" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="下拉可以刷新"
+        android:textColor="#ff996d7a" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="6.0dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/refresh_bottom" />
+
+</FrameLayout>

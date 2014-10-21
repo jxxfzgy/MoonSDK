@@ -17,14 +17,16 @@ import sdk.moon.com.moonsdk.model.ormlite.MOrmliteActivity;
  * 数据加载
  */
 public class MMainHelper {
-    public static List<MActivityBean> mActivityBeans = new ArrayList<MActivityBean>() ;
-    private static List<MActivityBean> gaodeList = new ArrayList<MActivityBean>() ;
-    private static List<MActivityBean> tupianJiazaiList = new ArrayList<MActivityBean>() ;
-    private static List<MActivityBean> tupianShoushiList = new ArrayList<MActivityBean>() ;
-    private static List<MActivityBean> tupianCaijianList = new ArrayList<MActivityBean>() ;
-    private static List<MActivityBean> loopViewpagerlist = new ArrayList<MActivityBean>() ;
-    private static List<MActivityBean> ormliteList = new ArrayList<MActivityBean>() ;
-    static{
+
+    public List<MActivityBean> getData(){
+        List<MActivityBean> mActivityBeans = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> gaodeList = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> tupianJiazaiList = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> tupianShoushiList = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> tupianCaijianList = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> loopViewpagerlist = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> ormliteList = new ArrayList<MActivityBean>() ;
+
         gaodeList.add(new MActivityBean().setFunctionName("定位服务").setActivityName(MLocationActivity.class)) ;
 
         tupianJiazaiList.add(new MActivityBean().setFunctionName("普通图片").setActivityName(MImageLoadActivity.class));
@@ -49,5 +51,6 @@ public class MMainHelper {
         mActivityBeans.add(new MActivityBean().setFunctionName("循环ViewPagerAPI").setSubBean(loopViewpagerlist));
         mActivityBeans.add(new MActivityBean().setFunctionName("Ormlite数据库API").setSubBean(ormliteList));
 
+        return mActivityBeans ;
     }
 }

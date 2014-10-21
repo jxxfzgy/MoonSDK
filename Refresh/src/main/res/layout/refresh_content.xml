@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="暂无数据，试试下拉"
+        android:textColor="#ff996d7a" />
+
+
+
+</FrameLayout>

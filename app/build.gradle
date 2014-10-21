@@ -29,4 +29,5 @@ dependencies {
     compile project(':LoopViewPager')
     compile project(':OrmliteDatabase')
     compile project(':ExpandableListView')
+    compile project(':Refresh')
 }

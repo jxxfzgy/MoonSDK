@@ -175,6 +175,11 @@ public class MActivityAdapter extends MBExpandAdapter<MActivityBean, MActivityAd
         return lineLayout;
     }
 
+    /**
+     * 获取每个item
+     * @param margin
+     * @return
+     */
     private TextView getItemTextView(boolean margin) {
         TextView textView = new TextView(MApplication.getContext());
         LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams((int) MApplication.getContext().getResources().getDimension(R.dimen.main_item_txt_width),
@@ -189,6 +194,10 @@ public class MActivityAdapter extends MBExpandAdapter<MActivityBean, MActivityAd
         return textView;
     }
 
+    /**
+     * 获取一个空的item，目的为了占据一个位置
+     * @return
+     */
     private TextView getEmptyTextView() {
         TextView textView = new TextView(MApplication.getContext());
         LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams((int) MApplication.getContext().getResources().getDimension(R.dimen.main_item_txt_width),

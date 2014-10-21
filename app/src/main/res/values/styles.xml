@@ -9,7 +9,7 @@
         <item name="android:paddingBottom">15dp</item>
         <item name="android:paddingTop">15dp</item>
         <item name="android:textSize">22sp</item>
-        <item name="android:textColor">@color/grey</item>
+        <item name="android:textColor">@color/dark_black</item>
     </style>
 
 </resources>
