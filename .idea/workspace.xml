@@ -37,7 +37,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cba6c07-6c9f-41cf-839a-ac14776d9fcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/adapter/MActivityAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/sdk/moon/com/moonsdk/adapter/MActivityAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MoonSDK.iws" />
@@ -5626,6 +5625,11 @@
       <created>1413218256976</created>
       <updated>1413218256976</updated>
     </task>
+    <task id="LOCAL-00001" summary="修复expand展开bug">
+      <created>1413880824667</created>
+      <updated>1413880824667</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -5698,6 +5702,8 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
+    <MESSAGE value="修复expand展开bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复expand展开bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
