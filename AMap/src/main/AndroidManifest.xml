@@ -9,16 +9,15 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <application android:allowBackup="true"
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher"
         >
         <meta-data
             android:name="com.amap.api.v2.apikey"
-
-        android:value="048bf5ee7d17016d2b22411be11684aa"/> <!--家里的key-->
         android:value="25a53bfd904fcc270058f16400bd7f73"/> <!--公司的key-->
+        android:value="048bf5ee7d17016d2b22411be11684aa"/> <!--家里的key-->
     </application>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
 
 </manifest>
