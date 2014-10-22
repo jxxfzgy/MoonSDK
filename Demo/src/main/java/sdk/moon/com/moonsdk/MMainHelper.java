@@ -52,6 +52,12 @@ public class MMainHelper {
         mActivityBeans.add(new MActivityBean().setFunctionName("图片裁剪API").setSubBean(tupianCaijianList));
         mActivityBeans.add(new MActivityBean().setFunctionName("循环ViewPagerAPI").setSubBean(loopViewpagerlist));
         mActivityBeans.add(new MActivityBean().setFunctionName("Ormlite数据库API").setSubBean(ormliteList));
+//        mActivityBeans.add(new MActivityBean().setFunctionName("高德地图API").setSubBean(gaodeList));
+//        mActivityBeans.add(new MActivityBean().setFunctionName("图片加载API").setSubBean(tupianJiazaiList));
+//        mActivityBeans.add(new MActivityBean().setFunctionName("图片手势放缩API").setSubBean(tupianShoushiList));
+//        mActivityBeans.add(new MActivityBean().setFunctionName("图片裁剪API").setSubBean(tupianCaijianList));
+//        mActivityBeans.add(new MActivityBean().setFunctionName("循环ViewPagerAPI").setSubBean(loopViewpagerlist));
+//        mActivityBeans.add(new MActivityBean().setFunctionName("Ormlite数据库API").setSubBean(ormliteList));
 
         return mActivityBeans ;
     }

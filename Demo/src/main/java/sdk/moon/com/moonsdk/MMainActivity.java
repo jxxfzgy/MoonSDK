@@ -3,6 +3,7 @@ package sdk.moon.com.moonsdk;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -66,6 +67,7 @@ public class MMainActivity extends MBaseActivity implements AbstractSlideExpanda
     public void onExpand(View itemView, int position) {
         mActivityBeanList.get(position).setExpand(true);
         View view  = (View) itemView.getTag() ;
+        Log.v("zgy", "============view=========" + view);
         TextView textView = (TextView)view.findViewById(R.id.expandItem) ;
         textView.setTextColor(this.getResources().getColor(R.color.green));
     }

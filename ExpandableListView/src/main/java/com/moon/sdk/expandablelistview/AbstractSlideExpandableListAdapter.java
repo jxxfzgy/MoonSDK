@@ -209,9 +209,8 @@ public abstract class AbstractSlideExpandableListAdapter extends WrapperListAdap
         View more = getExpandToggleButton(parent);
         View itemToolbar = getExpandableView(parent);
         itemToolbar.measure(parent.getWidth(), parent.getHeight());
-
+        itemToolbar.setTag(more);
         if (!viewMap.containsKey(position)){
-            itemToolbar.setTag(more);
             viewMap.put(position, itemToolbar);
         }
         enableFor(more, itemToolbar, position);

@@ -14,17 +14,17 @@
         revision="20.0.0"
         sha1="dab364747351e8131b709cda39a67978da533761"/>
     <item
-        dex="C:\Users\moon.zhong\Desktop\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-bf85dd3fe6a956752b0a82e5cecc7cf26a906328.jar"
-        jar="C:\Users\moon.zhong\Desktop\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\LoopViewPager\unspecified\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="4a8803fc31aa401e91aef40a174dff219341315b"/>
-    <item
         dex="C:\Users\moon.zhong\Desktop\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-5a02f7fd60e0803f6ffd485c5822613fb1167549.jar"
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\GestureImageView\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="9f91418541ef7987772fa970f6c725667f71dcdb"/>
+    <item
+        dex="C:\Users\moon.zhong\Desktop\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-bf85dd3fe6a956752b0a82e5cecc7cf26a906328.jar"
+        jar="C:\Users\moon.zhong\Desktop\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\LoopViewPager\unspecified\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4a8803fc31aa401e91aef40a174dff219341315b"/>
     <item
         dex="C:\Users\moon.zhong\Desktop\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-1e04379b62118a33e89b7d3f792478b240db0b18.jar"
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\Demo\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
@@ -90,7 +90,7 @@
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\ExpandableListView\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="31b11049e7b47f7007439878914a2f5cb53b0e2b"/>
+        sha1="2b8d655d1957a45bbba816ef80f0f0ffeccd30d6"/>
     <item
         dex="C:\Users\moon.zhong\Desktop\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-ef9cd86d58ebab65efc87cdaa609e87bf017ac3f.jar"
         jar="C:\Users\moon.zhong\Desktop\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\classes.jar"
