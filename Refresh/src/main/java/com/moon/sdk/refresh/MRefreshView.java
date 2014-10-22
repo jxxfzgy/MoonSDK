@@ -5,7 +5,6 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.drawable.AnimationDrawable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.MotionEvent;
@@ -38,12 +37,19 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
     private Scroller mScroller;
     /*手势识别需要用到*/
     private GestureDetector mGesture;
-    /*第一次布局次控件，让刷新view先隐藏起来，
+    /*
+    * 第一次布局次控件，让刷新view先隐藏起来，
     * 滚动到上面
     * */
     private boolean isFirst = true;
+    /*按下时，记录y轴的高度*/
     private float downPointY;
-    private int data_5 = 0;
+    /*
+    * 有些控件不是紧挨着顶部的，像瀑布流，
+    * 所以需要设置距离顶部的高度来判断是否
+    * 可以下拉刷新
+    * */
+    private int marginTop;
     /*刷新view当前的状态*/
     private MRefreshStatue refreshStatue;
     /*刷新监听操作，当达到下拉刷新的条件时，触发*/
@@ -131,7 +137,7 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
 
     //根据自己的控件来定义高度
     public final void setPaddingTop(int data) {
-        this.data_5 = data;
+        this.marginTop = data;
     }
 
     public final void stopRefresh() {
@@ -272,7 +278,7 @@ public class MRefreshView extends ViewGroup implements OnGestureListener {
                 int top = child.getTop();
                 int padding = mAdapterView.getPaddingTop();
                 if (mAdapterView.getFirstVisiblePosition() == 0
-                        && Math.abs(top - padding) == data_5) {//这里之前用3可以判断,但现在不行,还没找到原因
+                        && Math.abs(top - padding) == marginTop) {//这里之前用3可以判断,但现在不行,还没找到原因
                     if (refreshStatue == MRefreshStatue.REFRESH_ING) {
                         int loadingTop = getScrollY();
                         int loadingHeight = this.animationView.getHeight();

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:rowCount="2"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:padding="20dp"
+    >
+   <TextView
+       android:text="姓名："
+       style="@style/dialogContactText"
+       android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/dialogName"
+        android:layout_columnSpan="3"
+        android:gravity="center"
+        android:layout_gravity="fill"
+        style="@style/dialogContactText"
+        android:hint="请输入姓名"/>
+    <TextView
+        android:text="号码："
+        style="@style/dialogContactText"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/dialogTel"
+        android:layout_columnSpan="3"
+        android:gravity="center"
+        android:layout_gravity="fill"
+        style="@style/dialogContactText"
+        android:inputType="phone"
+        android:hint="请输入电话号码"/>
+</GridLayout>

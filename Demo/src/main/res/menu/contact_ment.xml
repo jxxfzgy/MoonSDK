@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/addContact"
+        android:title="添加联系人"
+        android:icon="@android:drawable/ic_input_add"
+        android:showAsAction="ifRoom"/>
+</menu>

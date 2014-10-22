@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MMainActivity">
+
+    <com.polites.android.GestureImageView
+        android:id="@+id/showGestureImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        gesture-image:min-scale="0.5"
+        gesture-image:max-scale="5.0"
+        gesture-image:strict="false"
+        />
+
+
+</RelativeLayout>

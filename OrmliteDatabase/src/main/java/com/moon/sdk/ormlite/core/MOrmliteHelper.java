@@ -6,6 +6,7 @@ import com.j256.ormlite.table.TableUtils;
 import com.moon.sdk.ormlite.core.abst.MBaseOrmliteHelper;
 import com.moon.sdk.ormlite.entity.MApkInfo;
 import com.moon.sdk.ormlite.entity.MContact;
+import com.moon.sdk.ormlite.entity.MContactBean;
 
 import java.sql.SQLException;
 
@@ -29,6 +30,7 @@ public class MOrmliteHelper extends MBaseOrmliteHelper {
         try {
             TableUtils.createTable(connectionSource, MContact.class);
             TableUtils.createTable(connectionSource, MApkInfo.class);
+            TableUtils.createTable(connectionSource, MContactBean.class) ;
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -39,6 +41,7 @@ public class MOrmliteHelper extends MBaseOrmliteHelper {
         try {
             TableUtils.dropTable(connectionSource, MContact.class, true);
             TableUtils.dropTable(connectionSource, MApkInfo.class, true);
+            TableUtils.dropTable(connectionSource,MContactBean.class,true) ;
         } catch (SQLException e) {
             e.printStackTrace();
         }

@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context=".MMainActivity">
+
+    <com.moon.sdk.refresh.MRefreshView
+        android:id="@+id/main_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.moon.sdk.expandablelistview.ActionSlideExpandableListView
+            android:id="@+id/expandListView"
+            android:listSelector="@null"
+            android:divider="@color/grey"
+            android:dividerHeight="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.moon.sdk.expandablelistview.ActionSlideExpandableListView>
+    </com.moon.sdk.refresh.MRefreshView>
+
+</RelativeLayout>

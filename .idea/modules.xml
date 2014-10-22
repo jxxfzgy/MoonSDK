@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AMap/AMap.iml" filepath="$PROJECT_DIR$/AMap/AMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClipImage/ClipImage.iml" filepath="$PROJECT_DIR$/ClipImage/ClipImage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo/Demo.iml" filepath="$PROJECT_DIR$/Demo/Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExpandableListView/ExpandableListView.iml" filepath="$PROJECT_DIR$/ExpandableListView/ExpandableListView.iml" />
       <module fileurl="file://$PROJECT_DIR$/GestureImageView/GestureImageView.iml" filepath="$PROJECT_DIR$/GestureImageView/GestureImageView.iml" />
       <module fileurl="file://$PROJECT_DIR$/IMageLoader/IMageLoader.iml" filepath="$PROJECT_DIR$/IMageLoader/IMageLoader.iml" />
@@ -12,7 +13,6 @@
       <module fileurl="file://$PROJECT_DIR$/OrmliteDatabase/OrmliteDatabase.iml" filepath="$PROJECT_DIR$/OrmliteDatabase/OrmliteDatabase.iml" />
       <module fileurl="file://$PROJECT_DIR$/Refresh/Refresh.iml" filepath="$PROJECT_DIR$/Refresh/Refresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/Validate/Validate.iml" filepath="$PROJECT_DIR$/Validate/Validate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>

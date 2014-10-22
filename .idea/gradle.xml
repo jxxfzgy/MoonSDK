@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AMap" />
             <option value="$PROJECT_DIR$/ClipImage" />
+            <option value="$PROJECT_DIR$/Demo" />
             <option value="$PROJECT_DIR$/ExpandableListView" />
             <option value="$PROJECT_DIR$/GestureImageView" />
             <option value="$PROJECT_DIR$/IMageLoader" />
@@ -17,7 +18,6 @@
             <option value="$PROJECT_DIR$/OrmliteDatabase" />
             <option value="$PROJECT_DIR$/Refresh" />
             <option value="$PROJECT_DIR$/Validate" />
-            <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
       </GradleProjectSettings>
