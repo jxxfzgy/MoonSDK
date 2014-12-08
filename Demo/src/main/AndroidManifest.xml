@@ -55,6 +55,9 @@
         <activity
             android:name=".model.ormlite.MContactActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.volley.MVolleyActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
