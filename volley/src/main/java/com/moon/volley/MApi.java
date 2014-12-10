@@ -16,6 +16,8 @@ public abstract class MApi {
 
     public static Map<String ,String> createParam(){
         Map<String ,String> params = new HashMap<String, String>() ;
+        params.put("version","2.0") ;
+        params.put("model","live") ;
         return params ;
     }
 }

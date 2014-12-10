@@ -11,7 +11,8 @@ import sdk.moon.com.moonsdk.model.imageloader.MImageLoadActivity;
 import sdk.moon.com.moonsdk.model.loopviewpager.MLoopViewActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MContactActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MOrmliteActivity;
-import sdk.moon.com.moonsdk.model.volley.MVolleyActivity;
+import sdk.moon.com.moonsdk.model.volley.MPostRActivity;
+import sdk.moon.com.moonsdk.model.volley.MPostSActivity;
 
 /**
  * Created by moon.zhong on 2014/10/21.
@@ -48,13 +49,11 @@ public class MMainHelper {
         mActivityBeans.add(new MActivityBean().setFunctionName("循环ViewPagerAPI").setSubBean(loopViewpagerlist));
 
         ormliteList.add(new MActivityBean().setFunctionName("增加数据").setActivityName(MOrmliteActivity.class));
-        ormliteList.add(new MActivityBean().setFunctionName("删除数据").setActivityName(MOrmliteActivity.class));
-        ormliteList.add(new MActivityBean().setFunctionName("修改数据").setActivityName(MOrmliteActivity.class));
-        ormliteList.add(new MActivityBean().setFunctionName("查询数据").setActivityName(MOrmliteActivity.class));
         ormliteList.add(new MActivityBean().setFunctionName("通讯录").setActivityName(MContactActivity.class));
         mActivityBeans.add(new MActivityBean().setFunctionName("Ormlite数据库API").setSubBean(ormliteList));
 
-        volleyList.add(new MActivityBean().setFunctionName("POST请求").setActivityName(MVolleyActivity.class));
+        volleyList.add(new MActivityBean().setFunctionName("POST请求").setActivityName(MPostRActivity.class));
+        volleyList.add(new MActivityBean().setFunctionName("POST发送").setActivityName(MPostSActivity.class));
         mActivityBeans.add(new MActivityBean().setFunctionName("网络请求API").setSubBean(volleyList));
 
 

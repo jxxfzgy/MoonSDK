@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/barLayout"
+    style="@style/custom_actionbar_layout">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+    <TextView
+        android:id="@+id/barLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        style="@style/T54_7"
+        android:layout_toLeftOf="@+id/barConfirm"
+        android:layout_toRightOf="@+id/barBack"
+        android:text="@string/app_name"/>
+    <TextView
+        android:id="@+id/barConfirm"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        style="@style/confirm_btn"
+        android:layout_marginRight="12dp"
+        android:text="发送"
+        />
+
+
+    <RelativeLayout
+        style="@style/custom_actionbar_back"
+        android:id="@+id/barBack">
+        <ImageView
+            android:id="@+id/backImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/mabc_ic_ab_back_holo_light"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/bottomLine"
+        android:layout_alignParentBottom="true"
+        style="@style/main_form_line"/>
+    </RelativeLayout>
+</RelativeLayout>

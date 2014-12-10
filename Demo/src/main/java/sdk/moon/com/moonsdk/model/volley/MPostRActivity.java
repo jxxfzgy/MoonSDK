@@ -26,6 +26,7 @@ public class MPostRActivity extends MBaseActivity{
 
     @Override
     public void initData() {
+        showInfo = findView(R.id.showNetData) ;
         TestApi.postListDetail(new MResponse<TestBean>() {
             @Override
             public void onErrorResponse(VolleyError error) {
@@ -42,6 +43,6 @@ public class MPostRActivity extends MBaseActivity{
 
     @Override
     public void initView() {
-        showInfo = findView(R.id.showNetData) ;
+
     }
 }

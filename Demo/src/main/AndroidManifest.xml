@@ -2,16 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="sdk.moon.com.moonsdk" >
 
-<!--    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />-->
-
     <application
         android:name=".application.MApplication"
         android:allowBackup="true"
@@ -56,7 +46,10 @@
             android:name=".model.ormlite.MContactActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".model.volley.MVolleyActivity"
+            android:name=".model.volley.MPostRActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.volley.MPostSActivity"
             android:screenOrientation="portrait"/>
     </application>
 

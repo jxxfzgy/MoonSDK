@@ -1,5 +1,6 @@
 package sdk.moon.com.moonsdk.abst;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -19,6 +20,7 @@ public abstract class MBaseActivity extends FragmentActivity {
     public String imgUrl1 = "http://img.my.csdn.net/uploads/201309/01/1378037234_3539.jpg" ;
     public Context gContext ;
     public MIFactory gIFactory;
+    public ActionBar actionBar ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,7 @@ public abstract class MBaseActivity extends FragmentActivity {
         initFactory() ;
         initData() ;
         initView() ;
+        actionBar = getActionBar() ;
     }
 
     /**

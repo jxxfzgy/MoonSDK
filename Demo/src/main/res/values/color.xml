@@ -5,4 +5,12 @@
     <color name="white">#ffffffff</color>
     <color name="dark_black">#5d6267</color>
     <color name="dark_grey">#f0f0f0f0</color>
+    <color name="main_color_1">#333333</color>
+    <color name="main_color_2">#666666</color>
+    <color name="main_color_3">#999999</color>
+    <color name="main_color_4">#c7c7c7</color>
+    <color name="main_color_5">#ff8a00</color>
+    <color name="main_color_6">#34c083</color>
+    <color name="main_color_7">#5c6368</color>
+    <color name="confirm_btn_press">#22000000</color>
 </resources>
