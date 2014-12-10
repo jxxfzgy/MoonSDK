@@ -15,7 +15,7 @@ import sdk.moon.com.moonsdk.abst.MBaseActivity;
 /**
  * Created by moon.zhong on 2014/12/8.
  */
-public class MVolleyActivity extends MBaseActivity{
+public class MPostRActivity extends MBaseActivity{
 
     private TextView showInfo ;
     @Override

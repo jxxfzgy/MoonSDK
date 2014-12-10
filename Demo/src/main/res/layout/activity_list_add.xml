@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:scrollbarStyle="@null"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/listAdd"
+                android:layout_marginLeft="@dimen/list_margin"
+                android:layout_marginRight="@dimen/list_margin"
+                android:layout_marginTop="@dimen/list_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:background="@drawable/bg_add_list_edit"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/checkBoxRela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/check_layout_marginTop"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/check_layout_marginBottom"
+                    android:visibility="gone">
+
+
+                    <CheckBox
+                        android:id="@+id/listSelectBtn"
+                        android:textSize="@dimen/item_txt_size"
+                        android:textColor="@color/main_color_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/list_margin"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableLeft="@drawable/list_check_selector"
+                        android:drawablePadding="@dimen/select_item_btn_margin"
+                        android:minWidth="0dp"
+                        android:paddingLeft="0dp"
+                        android:text="选中本条清单" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/listItem1"
+                    style="@style/list_item_lin">
+
+                    <TextView
+                        android:id="@+id/listName1"
+                        style="@style/list_item_name"
+                        android:text="名称" />
+
+                    <com.to8to.steward.custom.TParentFocusEditView
+                        android:id="@+id/listValue1"
+                        style="@style/list_item_value"
+                        android:hint="请输入购买物品的名称"
+                        android:maxLength="10"
+
+                        android:textColorHint="@color/main_line_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/listItem2"
+                    style="@style/list_item_lin">
+
+                    <TextView
+                        android:id="@+id/listName2"
+                        style="@style/list_item_name"
+                        android:text="价格" />
+
+                    <com.to8to.steward.custom.TParentFocusEditView
+                        android:id="@+id/listValue2"
+                        style="@style/list_item_value"
+                        android:hint="请输入物品价格"
+                        android:inputType="numberDecimal"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/main_line_color" />
+                    <TextView
+                        style="@style/list_item_value"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="wrap_content"
+                        android:text="元" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/listItem3"
+                    style="@style/list_item_lin">
+
+                    <TextView
+                        android:id="@+id/listName3"
+                        style="@style/list_item_name"
+
+                        android:text="品牌" />
+
+                    <com.to8to.steward.custom.TParentFocusEditView
+                        android:id="@+id/listValue3"
+                        style="@style/list_item_value"
+                        android:hint="请输入品牌名称"
+                        android:maxLength="10"
+                        android:textColorHint="@color/main_line_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/listItem4"
+                    style="@style/list_item_lin">
+
+                    <TextView
+                        android:id="@+id/listName4"
+                        style="@style/list_item_name"
+
+                        android:text="规格款式" />
+
+                    <com.to8to.steward.custom.TParentFocusEditView
+                        android:id="@+id/listValue4"
+                        style="@style/list_item_value"
+                        android:hint="请输入规格款式"
+                        android:maxLength="10"
+                        android:textColorHint="@color/main_line_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/listItem5"
+                    style="@style/list_item_lin"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:id="@+id/listName5"
+                        style="@style/list_item_name"
+                        android:text="购买地" />
+
+                    <!--            <com.to8to.steward.custom.TParentFocusEditView
+                                    android:id="@+id/listValue5"
+                                    style="@style/list_select_value"
+                                    android:editable="false" />-->
+                    <TextView
+                        android:id="@+id/listValue5"
+                        style="@style/list_item_value" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/listItem6"
+                    style="@style/list_item_lin"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:id="@+id/listName6"
+                        style="@style/list_item_name"
+                        android:text="类型" />
+
+                    <!--            <com.to8to.steward.custom.TParentFocusEditView
+                                    android:id="@+id/listValue6"
+                                    style="@style/list_select_value"
+                                    android:editable="false" />-->
+                    <TextView
+                        android:id="@+id/listValue6"
+                        style="@style/list_item_value" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/listItem7"
+                    style="@style/list_item_lin"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit_selector">
+
+                    <TextView
+                        android:id="@+id/listName7"
+                        style="@style/list_item_name"
+                        android:layout_height="48dp"
+                        android:text="备注" />
+
+                    <com.to8to.steward.custom.TParentFocusEditView
+                        android:id="@+id/listValue7"
+                        style="@style/list_item_value"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/list_item_remark_marginBottom"
+                        android:singleLine="false"
+                        android:maxLength="50" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/list_empty_height" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_edit_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_item_selector"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    style="@style/comment_line_style" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/select_btn_height"
+                    android:gravity="center"
+                    android:text="删除清单"
+                    android:textColor="#ff3030"
+                    android:textSize="@dimen/item_txt_size"></TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
