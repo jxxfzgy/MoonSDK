@@ -4,8 +4,11 @@ import android.app.ActionBar;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import com.to8to.clickstream.IEvent;
 
 import sdk.moon.com.moonsdk.core.MFactoryImpl;
 import sdk.moon.com.moonsdk.core.intf.MIFactory;
@@ -21,6 +24,7 @@ public abstract class MBaseActivity extends FragmentActivity {
     public Context gContext ;
     public MIFactory gIFactory;
     public ActionBar actionBar ;
+    public IEvent iEvent ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +39,20 @@ public abstract class MBaseActivity extends FragmentActivity {
      * 初始化工厂，高德地图的工厂
      */
     private void initFactory(){
-        gIFactory = MFactoryImpl.getInstance() ;
+        gIFactory = MFactoryImpl.getInstance(gContext) ;
+        iEvent = gIFactory.getIClickStreamFactory().newEventInStance() ;
+    }
+
+    @Override
+    protected void onResume() {
+        iEvent.onResume(getLocalClassName());
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        iEvent.onPause(getLocalClassName());
+        super.onPause();
     }
 
     /**

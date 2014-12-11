@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AMap" />
+            <option value="$PROJECT_DIR$/ClickStream" />
             <option value="$PROJECT_DIR$/ClipImage" />
             <option value="$PROJECT_DIR$/Demo" />
             <option value="$PROJECT_DIR$/ExpandableListView" />

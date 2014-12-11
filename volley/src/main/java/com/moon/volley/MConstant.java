@@ -9,11 +9,15 @@ public interface MConstant {
 //    public final String PORT = ":1010" ;
 //    public final String PATH = "/index" ;
 //    public final String URL = HOST+PORT+PATH ;
+
     /*to8to*/
     public final String HOST = "http://mobileapi.to8to.com";
     public final String PORT = ":1010" ;
     public final String PATH = "/index" ;
     public final String URL = HOST+ "/index.php";
+
+//    String HOST = "http://192.168.2.10";
+//    public final String URL = HOST+ "/mobileapi/web_entrance/frontend/index.php";
 
     public final String SCENE_ID = "295059" ;
 }

@@ -10,6 +10,8 @@ import java.util.Map;
 public interface MIDao<T> {
     /*插入一条数据*/
     public int insert(T dao) ;
+    /*插入一组数据*/
+    public int insert(List<T> daos) ;
     /*删除一条数据*/
     public int delete(T dao) ;
     /*删除所有*/

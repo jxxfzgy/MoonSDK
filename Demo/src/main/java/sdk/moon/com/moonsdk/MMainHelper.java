@@ -5,12 +5,15 @@ import java.util.List;
 
 import sdk.moon.com.moonsdk.entity.MActivityBean;
 import sdk.moon.com.moonsdk.model.amap.MLocationActivity;
+import sdk.moon.com.moonsdk.model.clickstream.MClickStreamActivity;
+import sdk.moon.com.moonsdk.model.clickstream.MPostStreamActivity;
 import sdk.moon.com.moonsdk.model.clipimage.MClipImageActivity;
 import sdk.moon.com.moonsdk.model.gestureview.MGestureViewActivity;
 import sdk.moon.com.moonsdk.model.imageloader.MImageLoadActivity;
 import sdk.moon.com.moonsdk.model.loopviewpager.MLoopViewActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MContactActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MOrmliteActivity;
+import sdk.moon.com.moonsdk.model.volley.MPostAvatar;
 import sdk.moon.com.moonsdk.model.volley.MPostRActivity;
 import sdk.moon.com.moonsdk.model.volley.MPostSActivity;
 
@@ -30,6 +33,7 @@ public class MMainHelper {
         List<MActivityBean> loopViewpagerlist = new ArrayList<MActivityBean>() ;
         List<MActivityBean> ormliteList = new ArrayList<MActivityBean>() ;
         List<MActivityBean> volleyList = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> clickStreamList = new ArrayList<MActivityBean>() ;
 
         gaodeList.add(new MActivityBean().setFunctionName("定位服务").setActivityName(MLocationActivity.class)) ;
         mActivityBeans.add(new MActivityBean().setFunctionName("高德地图API").setSubBean(gaodeList));
@@ -54,10 +58,12 @@ public class MMainHelper {
 
         volleyList.add(new MActivityBean().setFunctionName("POST请求").setActivityName(MPostRActivity.class));
         volleyList.add(new MActivityBean().setFunctionName("POST发送").setActivityName(MPostSActivity.class));
+        volleyList.add(new MActivityBean().setFunctionName("上传头像").setActivityName(MPostAvatar.class));
         mActivityBeans.add(new MActivityBean().setFunctionName("网络请求API").setSubBean(volleyList));
 
-
-
+        clickStreamList.add(new MActivityBean().setFunctionName("统计界面").setActivityName(MClickStreamActivity.class));
+        clickStreamList.add(new MActivityBean().setFunctionName("提交界面").setActivityName(MPostStreamActivity.class));
+        mActivityBeans.add(new MActivityBean().setFunctionName("点击流统计").setSubBean(clickStreamList));
         return mActivityBeans ;
     }
 }

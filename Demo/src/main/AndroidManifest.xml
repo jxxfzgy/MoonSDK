@@ -51,6 +51,15 @@
         <activity
             android:name=".model.volley.MPostSActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.volley.MPostAvatar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.clickstream.MClickStreamActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.clickstream.MPostStreamActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

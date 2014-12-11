@@ -7,7 +7,11 @@ import com.android.volley.ParseError;
 import com.android.volley.Response;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.moon.volley.MConstant;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Type;
@@ -38,9 +42,19 @@ public class MRequestJson<T> extends MRequest<T>{
         try {
             String jsonString = new String(response.data, HttpHeaderParser.parseCharset(response.headers)) ;
             Log.v("zgy", "===========jsonString==============" + jsonString) ;
-            Gson gson = new Gson() ;
-            T result = gson.fromJson(jsonString,type) ;
-            return Response.success(result,HttpHeaderParser.parseCacheHeaders(response)) ;
+            try {
+                JSONObject jsonObject = new JSONObject(jsonString) ;
+                if(jsonObject.getInt("errorCode") == 0){
+                    Gson gson = new Gson() ;
+                    T result = gson.fromJson(jsonString,type) ;
+                    return Response.success(result,HttpHeaderParser.parseCacheHeaders(response)) ;
+                }else {
+                    return Response.error(new ParseError()) ;
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+                return Response.error(new ParseError(e)) ;
+            }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
             return Response.error(new ParseError(e)) ;

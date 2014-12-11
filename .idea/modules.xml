@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AMap/AMap.iml" filepath="$PROJECT_DIR$/AMap/AMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClickStream/ClickStream.iml" filepath="$PROJECT_DIR$/ClickStream/ClickStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClipImage/ClipImage.iml" filepath="$PROJECT_DIR$/ClipImage/ClipImage.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo/Demo.iml" filepath="$PROJECT_DIR$/Demo/Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExpandableListView/ExpandableListView.iml" filepath="$PROJECT_DIR$/ExpandableListView/ExpandableListView.iml" />

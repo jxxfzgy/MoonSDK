@@ -1,5 +1,9 @@
 package com.moon.volley.network;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.media.ExifInterface;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -17,7 +21,7 @@ import java.util.Map;
  */
 public class MRequestFormJson<T> extends MRequestJson<T> {
 
-    private String BOUNDARY = "---------7d4a6d158c9"; //数据分隔线
+    private String BOUNDARY = "-----------------------------7d92221b604bc"; //数据分隔线
     private List<MFormItem> formItems;
 
     public MRequestFormJson(List<MFormItem> items, String url, Map<String, String> params, Type type, MResponse<T> response) {
@@ -68,9 +72,9 @@ d)       “/r/n”（即16进制编辑器显示的0D 0A）回车换行符。
                 sb.append(formItem.getName());
                 sb.append("\"");
                 if(!TextUtils.isEmpty(formItem.getFilePath()))
-                    sb.append("filename=").append("\""+formItem.getFilePath()+"\"") ;
+                    sb.append(";filename=").append("\""+formItem.getFilePath()+"\"") ;
                 sb.append("\r\n") ;
-                sb.append("Content-Type: ") ;
+                sb.append("Content-Type:") ;
                 sb.append(formItem.getMimeType()) ;
                 sb.append("\r\n");
                 sb.append("\r\n");
@@ -92,4 +96,6 @@ d)       “/r/n”（即16进制编辑器显示的0D 0A）回车换行符。
         /*conn.setRequestProperty("Content-Type", MULTIPART_FORM_DATA + "; boundary=" + BOUNDARY); */
         return "multipart/form-data ; boundary=" + BOUNDARY;
     }
+
+
 }

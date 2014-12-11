@@ -33,5 +33,6 @@ public class MApplication extends Application {
     private void initGlobal(){
         RequestQueue requestQueue = Volley.newRequestQueue(context) ;
         MRequestQueue.setRequestQueue(requestQueue);
+
     }
 }

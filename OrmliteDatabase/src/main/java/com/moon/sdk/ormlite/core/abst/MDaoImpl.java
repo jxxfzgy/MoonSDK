@@ -49,6 +49,16 @@ public abstract class MDaoImpl<T> implements MIDao<T> {
     }
 
     @Override
+    public int insert(List<T> daos) {
+        int code = 0 ;
+        int N = daos.size() ;
+        for(int i = 0 ;i < N ;i++ ){
+            code = insert(daos.get(i)) ;
+        }
+        return code;
+    }
+
+    @Override
     public int delete(T dao) {
         int code = 0 ;
         MBaseOrmliteHelper mBaseOrmliteHelper = new MOrmliteHelper(context);

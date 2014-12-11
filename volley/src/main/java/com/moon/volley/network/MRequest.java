@@ -18,6 +18,7 @@ public abstract class MRequest<T> extends Request<T> {
         this.params = params;
         mResponse = listener ;
         setRetryPolicy(new DefaultRetryPolicy(MRequest.TIMEOUT_MS,DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT)) ;
+        setShouldCache(false) ;
     }
 
     @Override
