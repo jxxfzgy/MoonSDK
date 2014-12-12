@@ -5,6 +5,7 @@ import java.util.List;
 
 import sdk.moon.com.moonsdk.entity.MActivityBean;
 import sdk.moon.com.moonsdk.model.amap.MLocationActivity;
+import sdk.moon.com.moonsdk.model.animviewpager.MAnimViewPagerActivity;
 import sdk.moon.com.moonsdk.model.clickstream.MClickStreamActivity;
 import sdk.moon.com.moonsdk.model.clickstream.MPostStreamActivity;
 import sdk.moon.com.moonsdk.model.clipimage.MClipImageActivity;
@@ -34,6 +35,7 @@ public class MMainHelper {
         List<MActivityBean> ormliteList = new ArrayList<MActivityBean>() ;
         List<MActivityBean> volleyList = new ArrayList<MActivityBean>() ;
         List<MActivityBean> clickStreamList = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> animViewPagerList = new ArrayList<MActivityBean>() ;
 
         gaodeList.add(new MActivityBean().setFunctionName("定位服务").setActivityName(MLocationActivity.class)) ;
         mActivityBeans.add(new MActivityBean().setFunctionName("高德地图API").setSubBean(gaodeList));
@@ -64,6 +66,9 @@ public class MMainHelper {
         clickStreamList.add(new MActivityBean().setFunctionName("统计界面").setActivityName(MClickStreamActivity.class));
         clickStreamList.add(new MActivityBean().setFunctionName("提交界面").setActivityName(MPostStreamActivity.class));
         mActivityBeans.add(new MActivityBean().setFunctionName("点击流统计").setSubBean(clickStreamList));
+
+        animViewPagerList.add(new MActivityBean().setFunctionName("切换动画").setActivityName(MAnimViewPagerActivity.class));
+        mActivityBeans.add(new MActivityBean().setFunctionName("ViewPager切换动画").setSubBean(animViewPagerList));
         return mActivityBeans ;
     }
 }

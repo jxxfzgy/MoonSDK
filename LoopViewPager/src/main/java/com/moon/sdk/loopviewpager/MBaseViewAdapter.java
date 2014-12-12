@@ -17,7 +17,7 @@ public abstract class MBaseViewAdapter<T> extends PagerAdapter {
 
     private List<T> tList ;
 
-    protected MBaseViewAdapter(Context context, List<T> tList) {
+    public MBaseViewAdapter(Context context, List<T> tList) {
         inflater = LayoutInflater.from(context) ;
         this.tList = tList;
     }
