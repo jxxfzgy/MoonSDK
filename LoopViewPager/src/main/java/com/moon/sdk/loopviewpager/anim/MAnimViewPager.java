@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.View;
 
 
-import com.nineoldandroids.view.ViewHelper;
+//import com.nineoldandroids.view.ViewHelper;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -73,7 +73,7 @@ public class MAnimViewPager extends ViewPager {
             mLastPage = getCurrentItem();
             mState = mLastPage == position ? State.GOING_RIGHT : State.GOING_LEFT;
         }
-        Log.v("zgy", "=======mState========" + mState);
+//        Log.v("zgy", "=======mState========" + mState);
         float positionOffSet = isSmall(offset) ? 0 : offset;
         View lastView = findContainItem(position);
         View currentView = findContainItem(position + 1);
@@ -89,8 +89,10 @@ public class MAnimViewPager extends ViewPager {
     }
 
     public void addViewContainer(int position, Object o) {
-        ViewHelper.setScaleX((View)o, ZOOM_MAX);
-        ViewHelper.setScaleY((View)o, ZOOM_MAX);
+//        ViewHelper.setScaleX((View)o, ZOOM_MAX);
+//        ViewHelper.setScaleY((View)o, ZOOM_MAX);
+        View.SCALE_X.set((View)o,ZOOM_MAX);
+        View.SCALE_Y.set((View)o,ZOOM_MAX);
         viewContainer.put(Integer.valueOf(position), o);
     }
 
@@ -116,18 +118,26 @@ public class MAnimViewPager extends ViewPager {
             if (left != null) {
                 mScale = in ? ZOOM_MAX + (1-ZOOM_MAX)*(1-positionOffset) :
                         1+ZOOM_MAX - ZOOM_MAX*(1-positionOffset);
-                ViewHelper.setPivotX(left, left.getMeasuredWidth() * 0.5f);
-                ViewHelper.setPivotY(left, left.getMeasuredHeight()*0.5f);
-                ViewHelper.setScaleX(left, mScale);
-                ViewHelper.setScaleY(left, mScale);
+//                ViewHelper.setPivotX(left, left.getMeasuredWidth() * 0.5f);
+//                ViewHelper.setPivotY(left, left.getMeasuredHeight()*0.5f);
+//                ViewHelper.setScaleX(left, mScale);
+//                ViewHelper.setScaleY(left, mScale);
+                left.setPivotX(left.getMeasuredWidth()*0.5f) ;
+                left.setPivotY(left.getMeasuredHeight()*0.5f) ;
+                View.SCALE_X.set(left,mScale);
+                View.SCALE_Y.set(left,mScale);
             }
             if (right != null) {
                 mScale = in ? ZOOM_MAX + (1-ZOOM_MAX)*positionOffset :
                         1+ZOOM_MAX - ZOOM_MAX*positionOffset;
-                ViewHelper.setPivotX(right, right.getMeasuredWidth()*0.5f);
-                ViewHelper.setPivotY(right, right.getMeasuredHeight()*0.5f);
-                ViewHelper.setScaleX(right, mScale);
-                ViewHelper.setScaleY(right, mScale);
+//                ViewHelper.setPivotX(right, right.getMeasuredWidth()*0.5f);
+//                ViewHelper.setPivotY(right, right.getMeasuredHeight()*0.5f);
+//                ViewHelper.setScaleX(right, mScale);
+//                ViewHelper.setScaleY(right, mScale);
+                right.setPivotX(right.getMeasuredWidth()*0.5f);
+                right.setPivotY(right.getMeasuredHeight()*0.5f);
+                View.SCALE_X.set(right,mScale);
+                View.SCALE_Y.set(right,mScale);
             }
 //        }
     }

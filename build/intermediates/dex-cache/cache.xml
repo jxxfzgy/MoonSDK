@@ -2,151 +2,144 @@
 <items version="2" >
 
     <item
-        jar="D:\Develop Tool\android-studio1\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/LoopViewPager/unspecified/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-d2c5fbda133c98f2d2490dc707ec551092931128.jar" />
+        revision="21.0.0"
+        sha1="8c2b8e351ab0398e79050d52706dd6f4b8b872a3">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-441a5cd3f49102fd6f128f1371ee64ca74f36951.jar" />
     </item>
     <item
-        jar="C:\Users\moon.zhong\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/GestureImageView/unspecified/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\library-2.4.0-793b4878ca250691aec5cf42fc3b5d9c68ad8f05.jar" />
+        revision="21.0.0"
+        sha1="761da7518f1d7ddd8c73a103773d857306c92fa1">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-36117da09177cb8cb6cb77ae657ae685eef45213.jar" />
     </item>
     <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/IMageLoader/unspecified/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-5c24058bad88d973e91083e68e565c98ad0f9263.jar" />
+        revision="21.0.0"
+        sha1="dc176c98b22b242683e87f5e3b5a8a755e51ad44">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-01cf1364958233c4255e57452a51f2c9f21fd9d5.jar" />
     </item>
     <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\OrmliteDatabase\unspecified\classes.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/AMap/unspecified/libs/AMap_2DMap_V2.3.0.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="1b31dd14e66c603e112727fe8f8201fae10065eb">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-1d6c44d0f0a42f6a26187eda0327bfa34e6fef50.jar" />
-    </item>
-    <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\libs\internal_impl-20.0.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="27bbd3982cdfe4468a9bf99c8c773734a9049e33">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-82395da98a862e74337bfd5eab26e7edcd9dbe29.jar" />
-    </item>
-    <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\IMageLoader\unspecified\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="c21d7cf1c6bfb8369d850ce9e11fafa02a0fbe89">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-890c69bbbb697582ae27e117beba1166dc8cc879.jar" />
-    </item>
-    <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\ClickStream\unspecified\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="65e419372abf4629faa79f46f657838fdba250ae">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-d04b14fe23f4407207aad4566d10b169f4852f4a.jar" />
-    </item>
-    <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\libs\AMap_Services_V2.3.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="0e35992f6d2a018c45fab23e0602fecd5e353ad3">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\AMap_Services_V2.3.0-e54de9550414dd190c4973a983217f6d03ff7606.jar" />
-    </item>
-    <item
-        jar="C:\Users\moon.zhong\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="a60a5e993c98c864010053cb901b7eab25306568">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\gson-2.2.4-2d669cd0e70de54b30f4ca01e08299252818b8df.jar" />
-    </item>
-    <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\libs\AMap_2DMap_V2.3.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
+        revision="21.0.0"
         sha1="f69a45ad8095c798970837ed61d7fb8b0b4e6ebe">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\AMap_2DMap_V2.3.0-68cf4553fb79b55e05cf1d282af2dd99ebc1541f.jar" />
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/AMap_2DMap_V2.3.0-0c4d0f82bcfab9635f320e97eb380b938f4641f9.jar" />
     </item>
     <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\ExpandableListView\unspecified\classes.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/AMap/unspecified/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="d8a51efd3362af100e9631ab8b2c0fb00b92119c">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-dff62864dfbdc0a499843d2147c515bccc58a0ce.jar" />
+        revision="21.0.0"
+        sha1="f3b46fc5621492cc2b44bfc64e555247ad434132">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-321942c5fbd27ddac58c6924fe6c83c4b17498bb.jar" />
     </item>
     <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\classes.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/OrmliteDatabase/unspecified/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="129d29d20e1e18cc0b3414ae2ecb776d1f3e717d">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-5d1f0cd8b2ba258fa2f83cea7e2588fd1e38a525.jar" />
+        revision="21.0.0"
+        sha1="5c10c24cdcb574952911992d636f290c8eed214c">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-90a4c8133f715917d390723b42f3e9ca608d8b2d.jar" />
     </item>
     <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\Refresh\unspecified\classes.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/Refresh/unspecified/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="3ef0c43606985d2c69b530aedb3fdbe9696a3bd3">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-3014a4c3dba2b883948dd0f6e7147649754d273d.jar" />
+        revision="21.0.0"
+        sha1="b59233b536e2b3f3b538195d290fbe24cc4c80af">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-3a7ee45e1d8a4ef379044682d16e7fa12c15ff5a.jar" />
     </item>
     <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\ClipImage\unspecified\classes.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/volley/unspecified/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="d0aef63923e2890eac0eba800eafd9183a01a863">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-9cca0d794d21f4bb0e6b19b0110612a3502cf69a.jar" />
+        revision="21.0.0"
+        sha1="96897f9d4d346595713dc441dbf4fd8d62e72aa9">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-97d50be4658769f013b536cea823946a6df02e4e.jar" />
     </item>
     <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\AMap\unspecified\libs\Android_Location_V1.3.0.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
+        revision="21.0.0"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-7aba346e530df37b9de358d06c6db56dfd3f9c7d.jar" />
+    </item>
+    <item
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/AMap/unspecified/libs/Android_Location_V1.3.0.jar"
+        jumboMode="false"
+        revision="21.0.0"
         sha1="2ffeb17da57de5b5e57ec44c6397fb4d682cf0db">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\Android_Location_V1.3.0-247e602b60ba9e9f38ce4bda6f30662a837bedcd.jar" />
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/Android_Location_V1.3.0-3d90768d47c394225630360f7d5aead85129b806.jar" />
     </item>
     <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
+        jar="/Library/SDK/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
         jumboMode="false"
-        revision="20.0.0"
+        revision="21.0.0"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-f145d9c84ab8227156f22553a0e8518efbbb40d3.jar" />
+    </item>
+    <item
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/AMap/unspecified/libs/AMap_Services_V2.3.0.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="0e35992f6d2a018c45fab23e0602fecd5e353ad3">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/AMap_Services_V2.3.0-fe3414158b3cc8930cc81126943b29a11225c9e0.jar" />
+    </item>
+    <item
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.0.0"
         sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-159cbe2f018e802c283cf6448ba0cdbcdf131a81.jar" />
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-3d39909438d1c71e9cfbcad2e2c14b334ab12246.jar" />
     </item>
     <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\classes.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/com.android.support/support-v13/20.0.0/libs/internal_impl-20.0.0.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="e128103d5281ddd26195a7f980b36d0d005a4e56">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-016680bc80ce99c44d2069ce3566963ec428d7b3.jar" />
+        revision="21.0.0"
+        sha1="27bbd3982cdfe4468a9bf99c8c773734a9049e33">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-bc4dc58bd28a446de53ae81a9bc1ace6a6c31012.jar" />
     </item>
     <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\LoopViewPager\unspecified\classes.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="4298d0114213e42d0f2012f50ad28b7115f74f15">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-37b3e4648ecca072c27538f790ede0abe50097cc.jar" />
-    </item>
-    <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\GestureImageView\unspecified\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="65d6ca76dc823bf3b9427d30218884c916dca724">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-79a568ce7e7165abcbfb85adc3158dd2c8714775.jar" />
-    </item>
-    <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
+        revision="21.0.0"
         sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-4f6e78bb48e507054a388a414a88c9a6cf9045fc.jar" />
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-c890b024d81e3972164caab6f472996df784e4f0.jar" />
     </item>
     <item
-        jar="E:\github\MoonSDK\Demo\build\intermediates\exploded-aar\MoonSDK\volley\unspecified\classes.jar"
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/com.android.support/support-v13/20.0.0/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="64b97adba400239c944846a2d40de678e97e6e36">
-        <dex dex="E:\github\MoonSDK\Demo\build\intermediates\pre-dexed\debug\classes-b6e1bcb76b8b2731927363cae6e344ed82ff1472.jar" />
+        revision="21.0.0"
+        sha1="e128103d5281ddd26195a7f980b36d0d005a4e56">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-6128f0b396153939bbd9ad9c444892a65b9aafab.jar" />
+    </item>
+    <item
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/ClipImage/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="503522204727b79656f14c1b11fa8b782f13315f">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-682e3b79a7ca00fc3b08565571522e58f3211755.jar" />
+    </item>
+    <item
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/ClickStream/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="5d481b5591ea7c8e4bb39f7d7b0f86c4036751fe">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-2ce3ce3bbb07850cc1fc97a399162a89afd70783.jar" />
+    </item>
+    <item
+        jar="/Users/gyzhong/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/gson-2.2.4-21b01c34ea56ada1110324e0357336452ee70a52.jar" />
+    </item>
+    <item
+        jar="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/exploded-aar/MoonSDK/ExpandableListView/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="308fd3447152ede2a773b6088ca7edc20b897922">
+        <dex dex="/Users/gyzhong/AndroidStudioProjects/MoonSDK/Demo/build/intermediates/pre-dexed/debug/classes-ad3b0e7ed7b2dcb0359c04ba0df4141153bbe979.jar" />
     </item>
 
 </items>
