@@ -141,8 +141,8 @@ public class EventThread extends HandlerThread implements Handler.Callback {
     private void initEvent(){
         PutEvent putEvent = new PutEvent() ;
         putEvent.setUid(dataHandler.getUid());
-        putEvent.setCookId("222222");
-        putEvent.setSessionId("000000");
+        putEvent.setCookId("");
+        putEvent.setSessionId("");
         putEvent.setUserLocation(CommonUtil.getLocation(context));
         putEvent.setIpAddress(CommonUtil.getIpAddress(context));
         putEvent.setDeviceType("手机");

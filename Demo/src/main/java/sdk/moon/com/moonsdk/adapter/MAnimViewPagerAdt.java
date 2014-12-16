@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.moon.sdk.loopviewpager.MBaseViewAdapter;
 import com.moon.sdk.loopviewpager.anim.MAnimViewPager;
-import com.nineoldandroids.view.ViewHelper;
+//import com.nineoldandroids.view.ViewHelper;
 
 import java.util.List;
 
