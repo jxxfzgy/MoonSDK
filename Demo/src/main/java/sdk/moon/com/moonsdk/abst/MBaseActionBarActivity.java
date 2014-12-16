@@ -1,4 +1,4 @@
-package sdk.moon.com.moonsdk;
+package sdk.moon.com.moonsdk.abst;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 
+import sdk.moon.com.moonsdk.R;
 import sdk.moon.com.moonsdk.abst.MBaseActivity;
 import sdk.moon.com.moonsdk.custom.MActionBarLayout;
 
