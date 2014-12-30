@@ -7,7 +7,7 @@ package com.to8to.clickstream;
 public interface IClickStream {
 
     /*确定发送数据量，默认为20条每次*/
-    public final static int defaultNum = 20 ;
+    public final static int defaultNum = 10 ;
 
     /*这个不解释*/
     public IEvent newEventInStance() ;

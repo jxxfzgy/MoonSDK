@@ -1,1 +1,1 @@
-include ':Demo', ':AMap', ':IMageLoader', ':GestureImageView', ':ClipImage', ':LoopViewPager', ':OrmliteDatabase', ':Validate', ':ExpandableListView', ':Refresh', ':volley', ':ClickStream'
+include ':Demo', ':AMap', ':IMageLoader', ':GestureImageView', ':ClipImage', ':LoopViewPager', ':OrmliteDatabase', ':Validate', ':ExpandableListView', ':Refresh', ':volley', ':ClickStream', ':Propertyanim'

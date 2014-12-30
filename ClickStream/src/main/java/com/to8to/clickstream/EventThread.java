@@ -121,7 +121,9 @@ public class EventThread extends HandlerThread implements Handler.Callback {
                 putEvent.setUserEvents(events);
                 String json = gson.toJson(putEvent);
                 mPost.postEvent(json, new ErrorRunnable(events), new SuccessRunnable());
+                Log.v("zgy","===========dataHandler.getUserEventDao().deleteAll()=======") ;
                 dataHandler.getUserEventDao().deleteAll();
+                Log.v("zgy","=================="+dataHandler.getUserEventDao().queryCount()) ;
                 break;
             /*初始化数据*/
             case INIT_EVENT:

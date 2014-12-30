@@ -78,10 +78,20 @@ public abstract class MDaoImpl<T> implements MIDao<T> {
     public int deleteAll() {
         int code = 0 ;
         List<T> list = queryAll() ;
-        Iterator<T> iterator = list.iterator();
-        while (iterator.hasNext()){
-            code = delete(iterator.next());
+        MBaseOrmliteHelper mBaseOrmliteHelper = new MOrmliteHelper(context) ;
+//        openWrDb(mOrmliteHelper) ;
+        try {
+            code = mBaseOrmliteHelper.getDao(tClass).delete(list) ;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (mBaseOrmliteHelper != null)
+                mBaseOrmliteHelper.close();
         }
+//        Iterator<T> iterator = list.iterator();
+//        while (iterator.hasNext()){
+//            code = delete(iterator.next());
+//        }
         return code;
     }
 
