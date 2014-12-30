@@ -14,6 +14,8 @@ import sdk.moon.com.moonsdk.model.imageloader.MImageLoadActivity;
 import sdk.moon.com.moonsdk.model.loopviewpager.MLoopViewActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MContactActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MOrmliteActivity;
+import sdk.moon.com.moonsdk.model.propertyanim.MPropertyActivity;
+import sdk.moon.com.moonsdk.model.propertyanim.MTarjectoryActivity;
 import sdk.moon.com.moonsdk.model.volley.MPostAvatar;
 import sdk.moon.com.moonsdk.model.volley.MPostRActivity;
 import sdk.moon.com.moonsdk.model.volley.MPostSActivity;
@@ -36,6 +38,7 @@ public class MMainHelper {
         List<MActivityBean> volleyList = new ArrayList<MActivityBean>() ;
         List<MActivityBean> clickStreamList = new ArrayList<MActivityBean>() ;
         List<MActivityBean> animViewPagerList = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> propertyAnim = new ArrayList<MActivityBean>() ;
 
         gaodeList.add(new MActivityBean().setFunctionName("定位服务").setActivityName(MLocationActivity.class)) ;
         mActivityBeans.add(new MActivityBean().setFunctionName("高德地图API").setSubBean(gaodeList));
@@ -69,6 +72,10 @@ public class MMainHelper {
 
         animViewPagerList.add(new MActivityBean().setFunctionName("切换动画").setActivityName(MAnimViewPagerActivity.class));
         mActivityBeans.add(new MActivityBean().setFunctionName("ViewPager切换动画").setSubBean(animViewPagerList));
+
+        propertyAnim.add(new MActivityBean().setFunctionName("View 放大").setActivityName(MPropertyActivity.class));
+        propertyAnim.add(new MActivityBean().setFunctionName("View 轨迹").setActivityName(MTarjectoryActivity.class));
+        mActivityBeans.add(new MActivityBean().setFunctionName("属性动画").setSubBean(propertyAnim));
         return mActivityBeans ;
     }
 }
