@@ -19,6 +19,7 @@ import sdk.moon.com.moonsdk.model.drawview.MDrawDyncCircleActivity;
 import sdk.moon.com.moonsdk.model.drawview.MDrawPathActivity;
 import sdk.moon.com.moonsdk.model.gestureview.MGestureViewActivity;
 import sdk.moon.com.moonsdk.model.imageloader.MImageLoadActivity;
+import sdk.moon.com.moonsdk.model.litepal.MLitepalActivity;
 import sdk.moon.com.moonsdk.model.loopviewpager.MLoopViewActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MContactActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MOrmliteActivity;
@@ -48,6 +49,7 @@ public class MMainHelper {
         List<MActivityBean> animViewPagerList = new ArrayList<MActivityBean>() ;
         List<MActivityBean> propertyAnim = new ArrayList<MActivityBean>() ;
         List<MActivityBean> drawView = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> litePal = new ArrayList<MActivityBean>() ;
 
         gaodeList.add(new MActivityBean().setFunctionName("定位服务").setActivityName(MLocationActivity.class)) ;
         mActivityBeans.add(new MActivityBean().setFunctionName("高德地图API").setSubBean(gaodeList));
@@ -93,6 +95,10 @@ public class MMainHelper {
         drawView.add(new MActivityBean().setFunctionName("画图片").setActivityName(MDrawBitmapActivity.class));
         drawView.add(new MActivityBean().setFunctionName("画颜色图片").setActivityName(MDrawColorBitmapActivity.class));
         mActivityBeans.add(new MActivityBean().setFunctionName("绘制View").setSubBean(drawView));
+
+        litePal.add(new MActivityBean().setFunctionName("lite数据库").setActivityName(MLitepalActivity.class));
+        mActivityBeans.add(new MActivityBean().setFunctionName("LitePal").setSubBean(litePal));
+
         return mActivityBeans ;
     }
 }

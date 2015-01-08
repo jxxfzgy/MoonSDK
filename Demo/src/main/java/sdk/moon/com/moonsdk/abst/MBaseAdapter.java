@@ -59,7 +59,11 @@ public abstract class MBaseAdapter<T,K> extends BaseAdapter{
 
     public abstract void showData(K viewHolder,int position) ;
 
-//    public <V extends View> V findView(View view, int id){
+    public LayoutInflater getInflater() {
+        return inflater;
+    }
+
+    //    public <V extends View> V findView(View view, int id){
 //        return (V) view.findViewById(id) ;
 //    }
 

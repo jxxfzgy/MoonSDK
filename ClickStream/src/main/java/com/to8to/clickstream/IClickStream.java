@@ -1,5 +1,7 @@
 package com.to8to.clickstream;
 
+import com.to8to.clickstream.network.ClickQueue;
+
 /**
  * Created by moon.zhong on 2014/12/2.
  * 点击流模块工厂接口
@@ -29,6 +31,6 @@ public interface IClickStream {
 
     /*统计用户ID，当用户更换了用户名，需要重新设置*/
     public void setUid(String uid) ;
-
+    public ClickQueue initClickQueue() ;
 
 }

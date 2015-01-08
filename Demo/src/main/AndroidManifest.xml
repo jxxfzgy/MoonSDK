@@ -87,6 +87,12 @@
         <activity
             android:name=".model.drawview.MDrawColorBitmapActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.litepal.MLitepalActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.litepal.MAddDataActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
