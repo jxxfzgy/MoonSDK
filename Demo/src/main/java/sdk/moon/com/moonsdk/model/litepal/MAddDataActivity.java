@@ -74,7 +74,7 @@ public class MAddDataActivity extends MBaseActionBarActivity {
                 mBook.setPublish(editView4.getText().toString());
                 if(publishId > 0){
                     ContentValues contentValues = new ContentValues() ;
-                    contentValues.put("books",mBook);
+//                    contentValues.put("books",mBook);
                     MPublish.update(MPublish.class,contentValues,publishId);
                 }else {
                     if (mBook.save()) {
