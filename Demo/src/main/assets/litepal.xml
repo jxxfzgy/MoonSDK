@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <litepal>
     <dbname value="MDatabase"></dbname>
-    <version value="1"></version>
+    <version value="4"></version>
     <list>
         <mapping class = "com.moon.litepalsdk.dao.MBook"></mapping>
+        <mapping class = "com.moon.litepalsdk.dao.MPublish"></mapping>
     </list>
 </litepal>

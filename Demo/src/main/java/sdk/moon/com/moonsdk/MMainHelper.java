@@ -20,6 +20,7 @@ import sdk.moon.com.moonsdk.model.drawview.MDrawPathActivity;
 import sdk.moon.com.moonsdk.model.gestureview.MGestureViewActivity;
 import sdk.moon.com.moonsdk.model.imageloader.MImageLoadActivity;
 import sdk.moon.com.moonsdk.model.litepal.MLitepalActivity;
+import sdk.moon.com.moonsdk.model.litepal.MOne2ManyActivity;
 import sdk.moon.com.moonsdk.model.loopviewpager.MLoopViewActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MContactActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MOrmliteActivity;
@@ -97,6 +98,7 @@ public class MMainHelper {
         mActivityBeans.add(new MActivityBean().setFunctionName("绘制View").setSubBean(drawView));
 
         litePal.add(new MActivityBean().setFunctionName("lite数据库").setActivityName(MLitepalActivity.class));
+        litePal.add(new MActivityBean().setFunctionName("多对一").setActivityName(MOne2ManyActivity.class));
         mActivityBeans.add(new MActivityBean().setFunctionName("LitePal").setSubBean(litePal));
 
         return mActivityBeans ;

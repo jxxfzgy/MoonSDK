@@ -93,6 +93,12 @@
         <activity
             android:name=".model.litepal.MAddDataActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.litepal.MOne2ManyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.litepal.MAddPublishActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

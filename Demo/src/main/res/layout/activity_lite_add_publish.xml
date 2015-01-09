@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:scrollbarStyle="@null"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/listAdd"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:background="@drawable/bg_add_list_edit"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/listItem1"
+                    style="@style/list_item_lin">
+
+                    <TextView
+                        android:id="@+id/listName1"
+                        style="@style/list_item_name"
+                        android:text="出版社" />
+
+                    <sdk.moon.com.moonsdk.custom.MParentFocusEditView
+                        android:id="@+id/listValue1"
+                        style="@style/list_item_value"
+                        android:hint="请输入出版社名称"
+                        android:maxLength="10"
+
+                        android:textColorHint="#e3e3e3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/listItem2"
+                    style="@style/list_item_lin">
+
+                    <TextView
+                        android:id="@+id/listName2"
+                        style="@style/list_item_name"
+                        android:text="地址" />
+
+                    <sdk.moon.com.moonsdk.custom.MParentFocusEditView
+                        android:id="@+id/listValue2"
+                        style="@style/list_item_value"
+                        android:hint="请输入地址"
+
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="#e3e3e3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -20,4 +20,10 @@ public class MComUtil {
         ints[1] = displayMetrics.heightPixels ;
         return  ints;
     }
+
+    public static int dp2px(Context context,int dp){
+        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics() ;
+        float px = displayMetrics.density*dp + 0.5f ;
+        return (int)px ;
+    }
 }

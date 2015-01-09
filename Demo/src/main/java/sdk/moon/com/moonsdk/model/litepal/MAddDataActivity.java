@@ -2,12 +2,15 @@ package sdk.moon.com.moonsdk.model.litepal;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.moon.litepalsdk.dao.MBook;
+import com.moon.litepalsdk.dao.MPublish;
 
 
 import sdk.moon.com.moonsdk.R;
@@ -28,9 +31,16 @@ public class MAddDataActivity extends MBaseActionBarActivity {
 
     private MBook mBook;
     private ProgressDialog mProgressBar;
+    private int publishId ;
 
     public static void start(Context context, int requestCode) {
         Intent intent = new Intent(context, MAddDataActivity.class);
+        ((Activity) context).startActivityForResult(intent, requestCode);
+    }
+
+    public static void start(Context context, int requestCode,int id) {
+        Intent intent = new Intent(context, MAddDataActivity.class);
+        intent.putExtra("id",id) ;
         ((Activity) context).startActivityForResult(intent, requestCode);
     }
 
@@ -43,6 +53,10 @@ public class MAddDataActivity extends MBaseActionBarActivity {
     @Override
     public void initData() {
         mBook = new MBook();
+        if(getIntent().hasExtra("id")){
+            publishId = getIntent().getIntExtra("id",0) ;
+            Log.v("zgy", "=========publishId=========" + publishId) ;
+        }
     }
 
     @Override
@@ -58,12 +72,18 @@ public class MAddDataActivity extends MBaseActionBarActivity {
                 mBook.setPinYing(editView2.getText().toString());
                 mBook.setPrice(Float.parseFloat(editView3.getText().toString()));
                 mBook.setPublish(editView4.getText().toString());
-                if (mBook.save()) {
-                    showToast("保存成功");
-                    setResult(RESULT_OK);
-                    finish();
-                } else {
-                    showToast("保存失败");
+                if(publishId > 0){
+                    ContentValues contentValues = new ContentValues() ;
+                    contentValues.put("books",mBook);
+                    MPublish.update(MPublish.class,contentValues,publishId);
+                }else {
+                    if (mBook.save()) {
+                        showToast("保存成功");
+                        setResult(RESULT_OK);
+                        finish();
+                    } else {
+                        showToast("保存失败");
+                    }
                 }
                 hideProgressDialog();
             }
