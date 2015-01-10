@@ -1,10 +1,9 @@
 package sdk.moon.com.moonsdk.model.clickstream;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
-import sdk.moon.com.moonsdk.MBaseActionBarActivity;
+import sdk.moon.com.moonsdk.abst.MBaseActionBarActivity;
 import sdk.moon.com.moonsdk.R;
 import sdk.moon.com.moonsdk.custom.MActionBarLayout;
 

@@ -63,6 +63,12 @@
         <activity
             android:name=".model.animviewpager.MAnimViewPagerActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.propertyanim.MPropertyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.propertyanim.MTarjectoryActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

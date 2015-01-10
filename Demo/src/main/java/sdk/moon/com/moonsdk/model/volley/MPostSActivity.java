@@ -4,16 +4,14 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ProgressBar;
 
 import com.android.volley.VolleyError;
 import com.moon.volley.api.ListApi;
 import com.moon.volley.entity.MList;
 import com.moon.volley.network.MResponse;
 
-import sdk.moon.com.moonsdk.MBaseActionBarActivity;
+import sdk.moon.com.moonsdk.abst.MBaseActionBarActivity;
 import sdk.moon.com.moonsdk.R;
-import sdk.moon.com.moonsdk.abst.MBaseActivity;
 import sdk.moon.com.moonsdk.custom.MActionBarLayout;
 import sdk.moon.com.moonsdk.custom.MParentFocusEditView;
 
