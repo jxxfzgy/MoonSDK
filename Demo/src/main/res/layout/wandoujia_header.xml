@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@color/color_wabdoujia_actionbar_color">
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:id="@+id/wandoujiaHeader1"></View>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/wandoujiaHeader2"/>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:id="@+id/wandoujiaHeader3"/>-->
+    <LinearLayout
+        android:id="@+id/wandoujiaHeader4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:background="@color/color_wandoujia_home_color"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="探索发现"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:textColor="@color/main_color_3"
+            android:gravity="center"
+            android:text="推荐关注"/>
+        </LinearLayout>
+
+</LinearLayout>

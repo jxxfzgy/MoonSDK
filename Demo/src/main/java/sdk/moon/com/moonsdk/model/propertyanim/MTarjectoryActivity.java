@@ -37,6 +37,6 @@ public class MTarjectoryActivity extends MBaseActivity implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-        mPropertyAnim.trajectoryAnim1(imageView);
+        mPropertyAnim.animPath(imageView);
     }
 }

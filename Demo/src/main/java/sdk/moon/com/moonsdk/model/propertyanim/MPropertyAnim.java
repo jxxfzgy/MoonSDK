@@ -7,11 +7,13 @@ import android.animation.PropertyValuesHolder;
 import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
+import android.graphics.Path;
 import android.graphics.Point;
 import android.graphics.PointF;
 import android.graphics.Rect;
 import android.os.Build;
 import android.util.Log;
+import android.util.Property;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
@@ -186,4 +188,37 @@ public class MPropertyAnim {
         valueAnimator.start();
 
     }
+
+    public void animPath(View object) {
+        Path path = new Path();
+        path.moveTo(10, 0);
+        path.lineTo(10, 300);
+        path.lineTo(150, 450);
+        path.lineTo(300, 0);
+        path.lineTo(200, 500);
+        path.lineTo(500, 210);
+        path.lineTo(700, 800);
+        path.lineTo(500, 420);
+        path.close();
+        Float fx[] = {10.0f, 10.0f, 150.0f, 300.0f, 200.0f, 500.0f, 700.0f, 500.0f};
+
+        PropertyValuesHolder propertyValuesHolderX = PropertyValuesHolder.ofFloat("x", 10.0f, 10.0f, 150.0f, 300.0f, 200.0f, 500.0f, 700.0f, 500.0f);
+        PropertyValuesHolder propertyValuesHolderY = PropertyValuesHolder.ofFloat("y", 0.0f, 200.0f, 450.0f, 0.0f, 500.0f, 210.0f, 800.0f, 400.2f);
+        ObjectAnimator objectAnimator = ObjectAnimator.ofPropertyValuesHolder(object,propertyValuesHolderX,propertyValuesHolderY);
+        objectAnimator.setDuration(2000);
+        objectAnimator.start();
+    }
+
+    public static final Property<View, Float> x = new Property<View, Float>(Float.class, "x") {
+        @Override
+        public Float get(View object) {
+            return object.getAlpha();
+        }
+    };
+    public static final Property<View, Float> y = new Property<View, Float>(Float.class, "y") {
+        @Override
+        public Float get(View object) {
+            return object.getAlpha();
+        }
+    };
 }

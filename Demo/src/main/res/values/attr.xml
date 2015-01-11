@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PageMark">
+        <attr name="mark_icon" format="reference"/>
+        <attr name="icon_margin" format="dimension"/>
+        <attr name="icon_size" format="dimension"/>
+        <attr name="doc_normal" format="color"/>
+        <attr name="doc_select" format="color"/>
+    </declare-styleable>
+
+</resources>

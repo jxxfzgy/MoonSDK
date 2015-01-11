@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_wabdoujia_actionbar_color">
+
+    <ListView
+        android:overScrollMode="never"
+        android:layout_below="@+id/wandoujiaActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewWan"
+        android:divider="@null"
+        android:scrollbars="none"></ListView>
+    <include layout="@layout/wandoujia_activity_head"
+        android:id="@+id/activityHead"
+        ></include>
+    <include layout="@layout/wandoujia_actionbar"
+        android:id="@+id/wandoujiaActionBar"
+       ></include>
+</RelativeLayout>

@@ -29,10 +29,10 @@ public abstract class MBaseActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         gContext = this ;
+        actionBar = getActionBar() ;
         initFactory() ;
         initData() ;
         initView() ;
-        actionBar = getActionBar() ;
     }
 
     /**

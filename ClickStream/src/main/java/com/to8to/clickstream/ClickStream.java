@@ -2,6 +2,9 @@ package com.to8to.clickstream;
 
 import android.content.Context;
 
+import com.to8to.clickstream.network.ClickQueue;
+import com.to8to.clickstream.network.ClickVolley;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -14,7 +17,7 @@ public class ClickStream implements IClickStream ,IRegister{
     private Context context ;
     public static String filePath  ;
     public static String EVENT_Path  ;
-
+    private ClickQueue clickQueue ;
     private static IClickStream iClickStream ;
 
     public static synchronized IClickStream newInstance(Context context){
@@ -25,6 +28,7 @@ public class ClickStream implements IClickStream ,IRegister{
     }
     private ClickStream(Context context) {
         this.context = context;
+        clickQueue = ClickVolley.newClickQueue() ;
         filePath = context.getFilesDir().getAbsolutePath()+ File.separator+"event.log" ;
         EVENT_Path = context.getFilesDir().getAbsolutePath()+ File.separator+"user.log" ;
         File file = new File(filePath) ;
@@ -61,5 +65,8 @@ public class ClickStream implements IClickStream ,IRegister{
         event = (EventImpl)EventImpl.getInstance(context) ;
         event.setUid(uid);
     }
-
+    @Override
+    public ClickQueue initClickQueue() {
+        return clickQueue;
+    }
 }

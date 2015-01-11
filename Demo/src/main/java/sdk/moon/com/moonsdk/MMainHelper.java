@@ -3,14 +3,24 @@ package sdk.moon.com.moonsdk;
 import java.util.ArrayList;
 import java.util.List;
 
+import sdk.moon.com.moonsdk.custom.MDrawColorBitmap;
+import sdk.moon.com.moonsdk.custom.MdynaDrawCircle;
 import sdk.moon.com.moonsdk.entity.MActivityBean;
 import sdk.moon.com.moonsdk.model.amap.MLocationActivity;
 import sdk.moon.com.moonsdk.model.animviewpager.MAnimViewPagerActivity;
 import sdk.moon.com.moonsdk.model.clickstream.MClickStreamActivity;
 import sdk.moon.com.moonsdk.model.clickstream.MPostStreamActivity;
 import sdk.moon.com.moonsdk.model.clipimage.MClipImageActivity;
+import sdk.moon.com.moonsdk.model.drawview.MDrawBitmapActivity;
+import sdk.moon.com.moonsdk.model.drawview.MDrawCircleActivity;
+import sdk.moon.com.moonsdk.model.drawview.MDrawColorBitmapActivity;
+import sdk.moon.com.moonsdk.model.drawview.MDrawColorCircleActivity;
+import sdk.moon.com.moonsdk.model.drawview.MDrawDyncCircleActivity;
+import sdk.moon.com.moonsdk.model.drawview.MDrawPathActivity;
 import sdk.moon.com.moonsdk.model.gestureview.MGestureViewActivity;
 import sdk.moon.com.moonsdk.model.imageloader.MImageLoadActivity;
+import sdk.moon.com.moonsdk.model.litepal.MLitepalActivity;
+import sdk.moon.com.moonsdk.model.litepal.MOne2ManyActivity;
 import sdk.moon.com.moonsdk.model.loopviewpager.MLoopViewActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MContactActivity;
 import sdk.moon.com.moonsdk.model.ormlite.MOrmliteActivity;
@@ -19,6 +29,7 @@ import sdk.moon.com.moonsdk.model.propertyanim.MTarjectoryActivity;
 import sdk.moon.com.moonsdk.model.volley.MPostAvatar;
 import sdk.moon.com.moonsdk.model.volley.MPostRActivity;
 import sdk.moon.com.moonsdk.model.volley.MPostSActivity;
+import sdk.moon.com.moonsdk.model.wandoujia.MWandouJiaActivity;
 
 /**
  * Created by moon.zhong on 2014/10/21.
@@ -39,6 +50,9 @@ public class MMainHelper {
         List<MActivityBean> clickStreamList = new ArrayList<MActivityBean>() ;
         List<MActivityBean> animViewPagerList = new ArrayList<MActivityBean>() ;
         List<MActivityBean> propertyAnim = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> drawView = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> litePal = new ArrayList<MActivityBean>() ;
+        List<MActivityBean> wandoujia = new ArrayList<MActivityBean>() ;
 
         gaodeList.add(new MActivityBean().setFunctionName("定位服务").setActivityName(MLocationActivity.class)) ;
         mActivityBeans.add(new MActivityBean().setFunctionName("高德地图API").setSubBean(gaodeList));
@@ -76,6 +90,22 @@ public class MMainHelper {
         propertyAnim.add(new MActivityBean().setFunctionName("View 放大").setActivityName(MPropertyActivity.class));
         propertyAnim.add(new MActivityBean().setFunctionName("View 轨迹").setActivityName(MTarjectoryActivity.class));
         mActivityBeans.add(new MActivityBean().setFunctionName("属性动画").setSubBean(propertyAnim));
+
+        drawView.add(new MActivityBean().setFunctionName("绘制三角形").setActivityName(MDrawPathActivity.class));
+        drawView.add(new MActivityBean().setFunctionName("绘制圆环").setActivityName(MDrawCircleActivity.class));
+        drawView.add(new MActivityBean().setFunctionName("动态圆环").setActivityName(MDrawDyncCircleActivity.class));
+        drawView.add(new MActivityBean().setFunctionName("颜色圆球").setActivityName(MDrawColorCircleActivity.class));
+        drawView.add(new MActivityBean().setFunctionName("画图片").setActivityName(MDrawBitmapActivity.class));
+        drawView.add(new MActivityBean().setFunctionName("画颜色图片").setActivityName(MDrawColorBitmapActivity.class));
+        mActivityBeans.add(new MActivityBean().setFunctionName("绘制View").setSubBean(drawView));
+
+        litePal.add(new MActivityBean().setFunctionName("lite数据库").setActivityName(MLitepalActivity.class));
+        litePal.add(new MActivityBean().setFunctionName("多对一").setActivityName(MOne2ManyActivity.class));
+        mActivityBeans.add(new MActivityBean().setFunctionName("LitePal").setSubBean(litePal));
+
+        wandoujia.add(new MActivityBean().setFunctionName("任务栏").setActivityName(MWandouJiaActivity.class));
+        mActivityBeans.add(new MActivityBean().setFunctionName("豌豆荚").setSubBean(wandoujia));
+
         return mActivityBeans ;
     }
 }

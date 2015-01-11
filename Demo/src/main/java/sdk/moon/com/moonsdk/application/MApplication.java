@@ -7,10 +7,12 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 import com.moon.volley.network.MRequestQueue;
 
+import org.litepal.LitePalApplication;
+
 /**
  * Created by moon.zhong on 2014/10/15.
  */
-public class MApplication extends Application {
+public class MApplication extends LitePalApplication {
     /*全局上下文*/
     private static Context context ;
     /*全局调试模式*/

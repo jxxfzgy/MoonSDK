@@ -69,6 +69,39 @@
         <activity
             android:name=".model.propertyanim.MTarjectoryActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.drawview.MDrawPathActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.drawview.MDrawCircleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.drawview.MDrawDyncCircleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.drawview.MDrawColorCircleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.drawview.MDrawBitmapActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.drawview.MDrawColorBitmapActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.litepal.MLitepalActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.litepal.MAddDataActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.litepal.MOne2ManyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.litepal.MAddPublishActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".model.wandoujia.MWandouJiaActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

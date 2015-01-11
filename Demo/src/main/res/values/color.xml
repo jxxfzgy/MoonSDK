@@ -13,4 +13,7 @@
     <color name="main_color_6">#34c083</color>
     <color name="main_color_7">#5c6368</color>
     <color name="confirm_btn_press">#22000000</color>
+    <color name="color_wandoujia_home_color">#349f1e</color>
+    <color name="color_wandoujia_mes_color">#eb3139</color>
+    <color name="color_wabdoujia_actionbar_color">#f1f1f1</color>
 </resources>

@@ -12,10 +12,15 @@
       <module fileurl="file://$PROJECT_DIR$/LoopViewPager/LoopViewPager.iml" filepath="$PROJECT_DIR$/LoopViewPager/LoopViewPager.iml" />
       <module fileurl="file://$PROJECT_DIR$/MoonSDK.iml" filepath="$PROJECT_DIR$/MoonSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/OrmliteDatabase/OrmliteDatabase.iml" filepath="$PROJECT_DIR$/OrmliteDatabase/OrmliteDatabase.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Propertyanim/Propertyanim.iml" filepath="$PROJECT_DIR$/Propertyanim/Propertyanim.iml" />
       <module fileurl="file://$PROJECT_DIR$/Propertyanim/Propertyanim.iml" filepath="$PROJECT_DIR$/Propertyanim/Propertyanim.iml" />
+=======
+>>>>>>> origin/branch01
       <module fileurl="file://$PROJECT_DIR$/Refresh/Refresh.iml" filepath="$PROJECT_DIR$/Refresh/Refresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stickylist/Stickylist.iml" filepath="$PROJECT_DIR$/Stickylist/Stickylist.iml" />
       <module fileurl="file://$PROJECT_DIR$/Validate/Validate.iml" filepath="$PROJECT_DIR$/Validate/Validate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/litepal/litepal.iml" filepath="$PROJECT_DIR$/litepal/litepal.iml" />
       <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
     </modules>
   </component>
